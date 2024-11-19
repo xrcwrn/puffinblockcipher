@@ -1,4 +1,4 @@
-# puffinblockcipher
+# PUFFIN Block Cipher
 Implementation of PUFFIN block cipher
 
  ## S-box Mapping (in Hexadecimal)
