@@ -13,4 +13,4 @@ S.difference_distribution_table()
 ```
 
 ![image](https://github.com/user-attachments/assets/4c8eeed9-1513-4c16-a054-af003a94d46d)
-
+<img src="https://github.com/user-attachments/assets/4c8eeed9-1513-4c16-a054-af003a94d46d" width="300">
