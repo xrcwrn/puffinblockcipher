@@ -22,4 +22,23 @@ S.differential_branch_number()
 ```
 
 
-Differential Branch Number of PUFFIN is 2
+The differential Branch Number of PUFFIN is 2
+
+## Differential Uniformity
+```
+from sage.crypto.sbox import SBox
+S = SBox(13,7, 3, 2, 9, 10, 12, 1, 15, 4, 5, 14, 6, 0, 11, 8)
+S.maximal_difference_probability_absolute()
+```
+The Differential Uniformity is 4
+
+ ## Linear Approximation Table (LAT)
+ ```
+from sage.crypto.sbox import SBox
+S = SBox(13,7, 3, 2, 9, 10, 12, 1, 15, 4, 5, 14, 6, 0, 11, 8)
+S.linear_approximation_table()
+
+```
+<img src="https://github.com/user-attachments/assets/8915a7f1-333c-4a82-bbb9-af686e6904e9" width="500">
+
+
