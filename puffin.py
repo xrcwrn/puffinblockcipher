@@ -21,7 +21,6 @@ P128 = [
 
 # Helper Functions
 def apply_permutation(data, perm):
-    """Apply a bit permutation."""
     result = 0
     for i, pos in enumerate(perm):
         if data & (1 << (pos - 1)):
@@ -54,54 +53,59 @@ def key_schedule(master_key, reverse=False):
         key = apply_permutation(key, P128)
     return subkeys[::-1] if reverse else subkeys
 
-def encryption(plaintext, master_key):
+# Updated Encryption and Decryption Functions
+def encrypt(data, master_key):
     subkeys = key_schedule(master_key)
-    state = plaintext
-    for round_num in range(32):
-        state = sbox_substitution(state)
-        state ^= subkeys[round_num]
-        state = apply_permutation(state, P64)
-    return state
+    encrypted_data = []
 
-def decryption(ciphertext, master_key):
+    # Process data in 64-bit (8-byte) blocks
+    for i in range(0, len(data), 8):
+        block = data[i:i + 8]
+        block_int = int.from_bytes(block.ljust(8, b'\x00'), byteorder='big')  # Pad if block is incomplete
+        encrypted_block = block_int
+        for round_num in range(32):
+            encrypted_block = sbox_substitution(encrypted_block)
+            encrypted_block ^= subkeys[round_num]
+            encrypted_block = apply_permutation(encrypted_block, P64)
+        encrypted_data.append(encrypted_block.to_bytes(8, byteorder='big'))
+    return b''.join(encrypted_data)
+
+def decrypt(data, master_key):
     subkeys = key_schedule(master_key, reverse=True)
-    state = ciphertext
-    for round_num in range(32):
-        state = apply_permutation(state, P64)
-        state ^= subkeys[round_num]
-        state = reverse_sbox_substitution(state)
-    return state
+    decrypted_data = bytearray()
 
-# String and Number Handling
-def string_to_int(text):
-    # Ensure the string is long enough to fit into the 64-bit integer space
-    byte_length = len(text.encode())
-    return int.from_bytes(text.encode(), byteorder='big'), byte_length
+    # Process data in 64-bit (8-byte) blocks
+    for i in range(0, len(data), 8):
+        block = data[i:i + 8]
+        block_int = int.from_bytes(block, byteorder='big')
+        decrypted_block = block_int
+        for round_num in range(32):
+            decrypted_block = apply_permutation(decrypted_block, P64)
+            decrypted_block ^= subkeys[round_num]
+            decrypted_block = reverse_sbox_substitution(decrypted_block)
+        decrypted_data.extend(decrypted_block.to_bytes(8, byteorder='big'))
+    return decrypted_data.rstrip(b'\x00')  # Remove padding
 
-def int_to_string(value, byte_length):
-    return value.to_bytes(byte_length, byteorder='big').decode(errors='ignore')
-
-# Updated Test Functionality
+# Updated Test Functionality 
 def test_puffin():
-    plaintext = "PUFFIN"
+    plaintext = "PUFFIN 1234"
     master_key = 0x0123456789ABCDEF0123456789ABCDEF
 
-    # Convert string to integer for encryption and get its byte length
-    plaintext_int, byte_length = string_to_int(plaintext)
+    # Convert string to bytes
+    plaintext_bytes = plaintext.encode()
 
     # Encrypt the plaintext
-    ciphertext = encryption(plaintext_int, master_key)
+    ciphertext_bytes = encrypt(plaintext_bytes, master_key)
 
     # Decrypt the ciphertext
-    decrypted_int = decryption(ciphertext, master_key)
+    decrypted_bytes = decrypt(ciphertext_bytes, master_key)
 
-    # Convert decrypted integer back to string
-    decrypted_text = int_to_string(decrypted_int, byte_length)
+    # Convert decrypted bytes back to string
+    decrypted_text = decrypted_bytes.decode()
 
     print(f"Plaintext: {plaintext}")
-    print(f"Ciphertext (Hex): {hex(ciphertext)}")
+    print(f"Ciphertext (Hex): {ciphertext_bytes.hex()}")
     print(f"Decrypted Text: {decrypted_text}")
 
-    
 # Run the test
 test_puffin()
