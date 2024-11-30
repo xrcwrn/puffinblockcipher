@@ -1,4 +1,4 @@
-# PUFFIN Cipher Implementation with String and Number Support
+# PUFFIN Cipher 
 
 # Constants
 S_BOX = [0xD, 0x7, 0x3, 0x2, 0x9, 0xA, 0xC, 0x1, 0xF, 0x4, 0x5, 0xE, 0x6, 0x0, 0xB, 0x8]
@@ -29,7 +29,6 @@ def apply_permutation(data, perm):
     return result
 
 def sbox_substitution(data):
-    """Perform substitution using the S-box."""
     substituted = 0
     for i in range(16):
         nibble = (data >> (4 * i)) & 0xF
@@ -37,7 +36,6 @@ def sbox_substitution(data):
     return substituted
 
 def reverse_sbox_substitution(data):
-    """Reverse substitution using the inverse S-box."""
     inverse_sbox = [S_BOX.index(i) for i in range(16)]
     reversed_data = 0
     for i in range(16):
@@ -46,7 +44,6 @@ def reverse_sbox_substitution(data):
     return reversed_data
 
 def key_schedule(master_key, reverse=False):
-    """Generate subkeys for 32 rounds."""
     subkeys = []
     key = apply_permutation(master_key, P128)
     for round_num in range(32):
@@ -58,7 +55,6 @@ def key_schedule(master_key, reverse=False):
     return subkeys[::-1] if reverse else subkeys
 
 def encryption(plaintext, master_key):
-    """Encrypt the plaintext using PUFFIN."""
     subkeys = key_schedule(master_key)
     state = plaintext
     for round_num in range(32):
@@ -68,7 +64,6 @@ def encryption(plaintext, master_key):
     return state
 
 def decryption(ciphertext, master_key):
-    """Decrypt the ciphertext using PUFFIN."""
     subkeys = key_schedule(master_key, reverse=True)
     state = ciphertext
     for round_num in range(32):
@@ -79,16 +74,14 @@ def decryption(ciphertext, master_key):
 
 # String and Number Handling
 def string_to_int(text):
-    """Convert a string to an integer."""
     # Ensure the string is long enough to fit into the 64-bit integer space
     byte_length = len(text.encode())
     return int.from_bytes(text.encode(), byteorder='big'), byte_length
 
 def int_to_string(value, byte_length):
-    """Convert an integer back to a string."""
     return value.to_bytes(byte_length, byteorder='big').decode(errors='ignore')
 
-# Updated Test Functionality (Fixed Handling)
+# Updated Test Functionality
 def test_puffin():
     plaintext = "PUFFIN"
     master_key = 0x0123456789ABCDEF0123456789ABCDEF
