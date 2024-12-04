@@ -43,1012 +43,250 @@ S.linear_approximation_table()
 
 ## Differential attack
 ```
-Plaintext: PUFFIN 1234
-Ciphertext (Hex): b86b37c46150a3cb6e5b0287023cf4aa
-Decrypted Text: PUFFIN 1234
-Performing Differential Attack...
-Differential Attack Results:
-Total Pairs: 1000
-Successful Pairs: 0
-Observed Ciphertext Differences (with counts):
-Difference: 0x97849e8d10f532c2 Count: 1
-Difference: 0xb2b1cde4f31f5865 Count: 1
-Difference: 0x5486a3b633ddab1e Count: 1
-Difference: 0xd8ab2185ed75f31f Count: 1
-Difference: 0x724572aa8dd5425a Count: 1
-Difference: 0x4c486da5df7d8ba6 Count: 1
-Difference: 0x2f584074b81acd50 Count: 1
-Difference: 0xa2e55e5231d81513 Count: 1
-Difference: 0x987c7500584fba54 Count: 1
-Difference: 0x5d5f3f927a3c6c32 Count: 1
-Difference: 0xd3d2e8edf9b83081 Count: 1
-Difference: 0x3ca40a46c15b9587 Count: 1
-Difference: 0xc68f441c989ba8c7 Count: 1
-Difference: 0xb0e24462362a85a3 Count: 1
-Difference: 0x8a4be1be3ae18702 Count: 1
-Difference: 0xf99118c1840c8dd2 Count: 1
-Difference: 0x5d470fcef9efe944 Count: 1
-Difference: 0x5674049160f86852 Count: 1
-Difference: 0xecbbbfae5efe171a Count: 1
-Difference: 0x85edefc0b47bfe7a Count: 1
-Difference: 0x33d2977d0335f369 Count: 1
-Difference: 0x9f9e1b8bd5dc66bb Count: 1
-Difference: 0xecb6f6dbd63304b5 Count: 1
-Difference: 0x897dc70f20fa8512 Count: 1
-Difference: 0x87f7af0f5a042a63 Count: 1
-Difference: 0xe622d4059251e01c Count: 1
-Difference: 0x773cecc0a339c568 Count: 1
-Difference: 0xed78c72ba1aedbc5 Count: 1
-Difference: 0xc67cf84b61413670 Count: 1
-Difference: 0x7244f782a8687641 Count: 1
-Difference: 0x21f8ca60ba13281c Count: 1
-Difference: 0x95709807e21ba92e Count: 1
-Difference: 0xa63671d39f3dcf15 Count: 1
-Difference: 0xa9da3ac1b10ae528 Count: 1
-Difference: 0x22bfd4edff706514 Count: 1
-Difference: 0x23cdb39e8264e991 Count: 1
-Difference: 0xf1c0eb36b778440d Count: 1
-Difference: 0xfc1195bf8be6c6b9 Count: 1
-Difference: 0xf0dc87d9c28ebd36 Count: 1
-Difference: 0xde318933c12dc6c5 Count: 1
-Difference: 0x4403d50df6b7f152 Count: 1
-Difference: 0x65c1e58b0a6ec50b Count: 1
-Difference: 0xc672e9316db62875 Count: 1
-Difference: 0xea5d7def4928c634 Count: 1
-Difference: 0x27cb81ad99568753 Count: 1
-Difference: 0xc8ce015ab94e7d5 Count: 1
-Difference: 0xb27f1ec4dfc8568d Count: 1
-Difference: 0xff4a2817b9f864d8 Count: 1
-Difference: 0x80cc0fbaae0c910c Count: 1
-Difference: 0x7462fc74e88b4964 Count: 1
-Difference: 0x27549719dbff7ebc Count: 1
-Difference: 0x4be4d003ebead42a Count: 1
-Difference: 0x9306a7097ec68e1a Count: 1
-Difference: 0xc9a78fadb1814fba Count: 1
-Difference: 0x2c879f9f26d2b6c8 Count: 1
-Difference: 0xd57c56ec3bf1d00a Count: 1
-Difference: 0xe79871c7226e00dc Count: 1
-Difference: 0x361dbf7ce7ed8316 Count: 1
-Difference: 0xcfe4bd7cafc1b2bd Count: 1
-Difference: 0x4c1f3382c1d225d6 Count: 1
-Difference: 0x41df1fc9436ec0ce Count: 1
-Difference: 0x4efad82e58d075a8 Count: 1
-Difference: 0x62103fe0f524bd40 Count: 1
-Difference: 0x4b7033964dfb4e14 Count: 1
-Difference: 0xadbfe695672ae202 Count: 1
-Difference: 0x66579e28797d3953 Count: 1
-Difference: 0x7a3abf4947c77cb5 Count: 1
-Difference: 0x951745864c4a30f9 Count: 1
-Difference: 0x955e7895ee6820b7 Count: 1
-Difference: 0x2490ed6ec82f298e Count: 1
-Difference: 0xfba1bb0d2cf87237 Count: 1
-Difference: 0x5b63ed92987acfb2 Count: 1
-Difference: 0x5b9f7eb03d6d5755 Count: 1
-Difference: 0x888475e7b2da9856 Count: 1
-Difference: 0xaaa48fa1255ca179 Count: 1
-Difference: 0x89f6055f620b1ae7 Count: 1
-Difference: 0xd93317cb0ea7ec8e Count: 1
-Difference: 0x6e1717c63fc59265 Count: 1
-Difference: 0x9936ccfa0bfde3b9 Count: 1
-Difference: 0x98a45f21d65ef80 Count: 1
-Difference: 0xab54f9f4caa6c66e Count: 1
-Difference: 0x453d5221a711ce4e Count: 1
-Difference: 0xeee76990423e711c Count: 1
-Difference: 0x9b13f28c0a1a8487 Count: 1
-Difference: 0x826383fb1961b3d7 Count: 1
-Difference: 0xecb6c60b42d1e5db Count: 1
-Difference: 0x16811beb8773cf1b Count: 1
-Difference: 0x9bc3e71e6b3e6c30 Count: 1
-Difference: 0x98e096486ed8db87 Count: 1
-Difference: 0x24ff936befec9a51 Count: 1
-Difference: 0x3a68067bedc91c1b Count: 1
-Difference: 0xd6a9d17752cc0466 Count: 1
-Difference: 0xac36c4a66778a6f8 Count: 1
-Difference: 0x5aff4eecb692ace9 Count: 1
-Difference: 0x68110a197f1d6b2 Count: 1
-Difference: 0xed0e191d101ced41 Count: 1
-Difference: 0x11ea0182c8c1597c Count: 1
-Difference: 0x12123da40d04eb57 Count: 1
-Difference: 0x77cab6ee8434a3dc Count: 1
-Difference: 0x655162fced8873ef Count: 1
-Difference: 0xec7d48a2b64ca97c Count: 1
-Difference: 0xf66f75b19f11337a Count: 1
-Difference: 0xc4bcbe5206275010 Count: 1
-Difference: 0x130df45738d33adf Count: 1
-Difference: 0x3ca07917fa17f4 Count: 1
-Difference: 0xe07aafe831ac23bb Count: 1
-Difference: 0x5bb8b9d3c933a618 Count: 1
-Difference: 0x2423bd5951c78d32 Count: 1
-Difference: 0x1a9a3dfc8c2e4109 Count: 1
-Difference: 0xe8c82d1f193d3822 Count: 1
-Difference: 0x7a00e24ddd859c7 Count: 1
-Difference: 0xdf974ad82c6c2f13 Count: 1
-Difference: 0xa307d9183fdd53e7 Count: 1
-Difference: 0xff599feca481a1f4 Count: 1
-Difference: 0x6bb4cf8cf403b871 Count: 1
-Difference: 0xa5bf49185b8f139 Count: 1
-Difference: 0x693c89911b1576fb Count: 1
-Difference: 0x8053632eae28af45 Count: 1
-Difference: 0xada006319b6fed2a Count: 1
-Difference: 0x6fd9cbbbfebbb5bf Count: 1
-Difference: 0x64d0eb304b43508b Count: 1
-Difference: 0xc712892f919576ef Count: 1
-Difference: 0xc68f7897d29401c9 Count: 1
-Difference: 0xd009e1d5f6966faa Count: 1
-Difference: 0xd00bb0ca28553a51 Count: 1
-Difference: 0xea7f4a15ffeec5cd Count: 1
-Difference: 0xe3a453e529f083e1 Count: 1
-Difference: 0x69f02185d60f44ba Count: 1
-Difference: 0x734b1d9dd68a0d63 Count: 1
-Difference: 0xd0ab5ed217a0bd7f Count: 1
-Difference: 0xc5e8ad601cc5eea4 Count: 1
-Difference: 0x3defa34fa7aff72f Count: 1
-Difference: 0xc8548d2b295e266 Count: 1
-Difference: 0xa27158b1fe5569c2 Count: 1
-Difference: 0xc061b313ef225be1 Count: 1
-Difference: 0xc0364dd08b054469 Count: 1
-Difference: 0x735ce8e5a032c244 Count: 1
-Difference: 0x52ec830f9c853892 Count: 1
-Difference: 0x96b3054a5d5dfa39 Count: 1
-Difference: 0xa311107e6139a389 Count: 1
-Difference: 0xb570b80e1281719f Count: 1
-Difference: 0x89e83a9ba681c10d Count: 1
-Difference: 0x6d7cf0f89d2fb894 Count: 1
-Difference: 0x2ac4a384d058b9c3 Count: 1
-Difference: 0xa10674b9bcae58e1 Count: 1
-Difference: 0xaee326efe53ba937 Count: 1
-Difference: 0xcd2ddb46d806037 Count: 1
-Difference: 0xec53dc5e6f7c930d Count: 1
-Difference: 0xfffda02a70a949b2 Count: 1
-Difference: 0x93894b46ad7ebe10 Count: 1
-Difference: 0xa3d1547fc9f62d7b Count: 1
-Difference: 0x49fda0a8ff871ebb Count: 1
-Difference: 0xf8f39c19cbaf4ad2 Count: 1
-Difference: 0xb27f84de80e7a2e1 Count: 1
-Difference: 0xed773a6d2afb6dc6 Count: 1
-Difference: 0x71af0dd435200145 Count: 1
-Difference: 0x37b1fb7062f2fc8d Count: 1
-Difference: 0xccdf941053d57885 Count: 1
-Difference: 0x7c9616ca9e7b05eb Count: 1
-Difference: 0x8ee9128ac013de9d Count: 1
-Difference: 0x7e6e418e026de6a9 Count: 1
-Difference: 0x8e3a2de7cc4d9c20 Count: 1
-Difference: 0x4091e81bb5a10ed4 Count: 1
-Difference: 0x8851d3ff82ebb001 Count: 1
-Difference: 0xefc8c54015022d2f Count: 1
-Difference: 0x6007d2673ff5e0d1 Count: 1
-Difference: 0xbd2da2e5d4ad5732 Count: 1
-Difference: 0x72322ef70df969 Count: 1
-Difference: 0x63b0fd3ddb8fe1d1 Count: 1
-Difference: 0x47f06211e07e78fa Count: 1
-Difference: 0x84800fd4f4babba6 Count: 1
-Difference: 0xa1b7e36587ac666c Count: 1
-Difference: 0xd818159b3bace808 Count: 1
-Difference: 0xac21a57e41152ad9 Count: 1
-Difference: 0x820de18f3325763 Count: 1
-Difference: 0x4a5b8a14bda57a2 Count: 1
-Difference: 0x15d26a46592b649d Count: 1
-Difference: 0xaf162cb685edf761 Count: 1
-Difference: 0x8a0041c9982d80d9 Count: 1
-Difference: 0xaf062c523d413610 Count: 1
-Difference: 0xce4ae0eb7aa91bfc Count: 1
-Difference: 0x524d43eba20bf3c Count: 1
-Difference: 0xa5cc881eb9e48476 Count: 1
-Difference: 0xa9d1b2d08d366b14 Count: 1
-Difference: 0x7efa899b8e18148 Count: 1
-Difference: 0xc1a3414fa1e7c29c Count: 1
-Difference: 0x6324544ffcd7cf51 Count: 1
-Difference: 0x247442a44eb43c98 Count: 1
-Difference: 0x12c983d09f475d6f Count: 1
-Difference: 0x477e6e099d761f7f Count: 1
-Difference: 0xd8039d4fe9dcad8f Count: 1
-Difference: 0xb3be7f31b2b0bcc2 Count: 1
-Difference: 0x9c65a2a3c8eeb0e Count: 1
-Difference: 0xfba3a577f20cbfc9 Count: 1
-Difference: 0xbfe21bda471ef8e1 Count: 1
-Difference: 0x532b5ed27a8b635 Count: 1
-Difference: 0xaa67f77a370432ee Count: 1
-Difference: 0xdd94c798e06ab5ce Count: 1
-Difference: 0xc72134114203b24d Count: 1
-Difference: 0x56e83bf7ef3431ce Count: 1
-Difference: 0x4096f5f42aa9df82 Count: 1
-Difference: 0xd5b456c6333d5293 Count: 1
-Difference: 0x3d5781a4b7b8c545 Count: 1
-Difference: 0x7576eb15a14c51fe Count: 1
-Difference: 0x4e1935339870d0d7 Count: 1
-Difference: 0x77ceb98e80c29ab5 Count: 1
-Difference: 0x9d32979ad5aa3375 Count: 1
-Difference: 0x9416adc0efc299b3 Count: 1
-Difference: 0x7d8957cbffeee6c Count: 1
-Difference: 0x8f01e183df83866 Count: 1
-Difference: 0x7ce5bdf5cf051314 Count: 1
-Difference: 0xf2d15b750827c3fd Count: 1
-Difference: 0x15efe0b6e1abf458 Count: 1
-Difference: 0xac443f15a085eb1 Count: 1
-Difference: 0x431c2571a1c637ce Count: 1
-Difference: 0x99e261e0cdfe448d Count: 1
-Difference: 0xddbb2e0614c3f558 Count: 1
-Difference: 0xb23480e672ab1a2f Count: 1
-Difference: 0x5cd76883f98f140f Count: 1
-Difference: 0x4c0a63ca18269673 Count: 1
-Difference: 0x9ab839f5f30713fd Count: 1
-Difference: 0xa19d859aced22c45 Count: 1
-Difference: 0x3ee349fbc9256991 Count: 1
-Difference: 0x29880eee438e1c0b Count: 1
-Difference: 0x61e52650134e5741 Count: 1
-Difference: 0xb0a9de72c6e28994 Count: 1
-Difference: 0x78c4b7c7af3e22d0 Count: 1
-Difference: 0x50abd8cd72c26736 Count: 1
-Difference: 0x6fda96921216b903 Count: 1
-Difference: 0x8cef6660c2e8ba5 Count: 1
-Difference: 0xe9b21c315bb8b8d0 Count: 1
-Difference: 0xa8bbdcb900f31028 Count: 1
-Difference: 0xa846863c6d04cff9 Count: 1
-Difference: 0x5e4d7027d6d60c7f Count: 1
-Difference: 0xa12634aad69614af Count: 1
-Difference: 0x819010787f725f15 Count: 1
-Difference: 0x7a0d65870f9d952b Count: 1
-Difference: 0x7c738b57b4e54fd3 Count: 1
-Difference: 0x5796753efac7d095 Count: 1
-Difference: 0x8c39d2db28204acf Count: 1
-Difference: 0xd875d7ede3a6d962 Count: 1
-Difference: 0x68ccf62699ef2b70 Count: 1
-Difference: 0xad4883484253e056 Count: 1
-Difference: 0xb5574370cea034f4 Count: 1
-Difference: 0xb3f95ef48c272653 Count: 1
-Difference: 0x3986bfc87f82653b Count: 1
-Difference: 0xf2f27ef8bb7c2e35 Count: 1
-Difference: 0xaef3151e5bb90443 Count: 1
-Difference: 0xb654777608a709c7 Count: 1
-Difference: 0xae4d751a7368e63e Count: 1
-Difference: 0x8344e6b816f0c704 Count: 1
-Difference: 0x2ddebbfe4dfc9fcf Count: 1
-Difference: 0x695530184a3c1666 Count: 1
-Difference: 0x8337fce9e413b6b8 Count: 1
-Difference: 0xa5997860606a95d0 Count: 1
-Difference: 0x9ce98351b1d035e4 Count: 1
-Difference: 0xfcf29eb34e8fe34c Count: 1
-Difference: 0xf8611c3f5fbc6d58 Count: 1
-Difference: 0x2f82d07599ed6c73 Count: 1
-Difference: 0x9f94eb6a17694413 Count: 1
-Difference: 0xbfdeb29d764a561 Count: 1
-Difference: 0xc55f0fe0bcca7cd0 Count: 1
-Difference: 0x5984ef6df9b2f304 Count: 1
-Difference: 0x47454320b4cacc2 Count: 1
-Difference: 0x2c59a2ee15fb46b8 Count: 1
-Difference: 0x222170910d6e0707 Count: 1
-Difference: 0x5e1e1cf71819dab4 Count: 1
-Difference: 0xf85f84041d147bd Count: 1
-Difference: 0x19a4c462b267c48e Count: 1
-Difference: 0xbc787603258a6888 Count: 1
-Difference: 0xc80aa855043b7635 Count: 1
-Difference: 0x9e21d0112a7c8a2d Count: 1
-Difference: 0x7e928b06670f2dd5 Count: 1
-Difference: 0xd5c5ab72b1e6b8a1 Count: 1
-Difference: 0x5d471f188426b8b4 Count: 1
-Difference: 0x7578a7fc71562949 Count: 1
-Difference: 0x9b5f5e0e739988d7 Count: 1
-Difference: 0xb691417baae0334f Count: 1
-Difference: 0x49aff80187474b9d Count: 1
-Difference: 0x3c786f85ca597bd8 Count: 1
-Difference: 0x30f1e4a50195ed06 Count: 1
-Difference: 0xf0c73af1d64c29ed Count: 1
-Difference: 0x1b683b8369d9dc52 Count: 1
-Difference: 0xf86b45223a738a46 Count: 1
-Difference: 0x8f6bb28ccf8ef46d Count: 1
-Difference: 0x3beb7785bad39d36 Count: 1
-Difference: 0xc2c85d2bb11e0050 Count: 1
-Difference: 0xf25bfcc88d65377f Count: 1
-Difference: 0xc1a367e9512f3a7e Count: 1
-Difference: 0x88bfb7367d024046 Count: 1
-Difference: 0x24eabd7c325cd29c Count: 1
-Difference: 0xaa18423934811050 Count: 1
-Difference: 0x9aee88e89f9a1e6f Count: 1
-Difference: 0x405c80a79bdc5a22 Count: 1
-Difference: 0x2cc0897e4750928e Count: 1
-Difference: 0x693ae8016785ece Count: 1
-Difference: 0x3940c6c6015bfad4 Count: 1
-Difference: 0x51aad18954ef1301 Count: 1
-Difference: 0x223433b9bf463c74 Count: 1
-Difference: 0x6cf23c98646ccdb Count: 1
-Difference: 0x439560dd6a73f915 Count: 1
-Difference: 0xedcadc49807e181f Count: 1
-Difference: 0xb9e83a49e73799fe Count: 1
-Difference: 0x91cac05ba3c43208 Count: 1
-Difference: 0xa392b047880e5c4b Count: 1
-Difference: 0xb81c57f49b605e1b Count: 1
-Difference: 0x1b8f45dde166fad7 Count: 1
-Difference: 0xac69589357fbc5fb Count: 1
-Difference: 0xc5bab01372d09d6 Count: 1
-Difference: 0x33e2230a2e10cb1a Count: 1
-Difference: 0xcd40aedc133a309a Count: 1
-Difference: 0xc66c1214537ef511 Count: 1
-Difference: 0x402cc703a45d2246 Count: 1
-Difference: 0xf795b64e9b914f7 Count: 1
-Difference: 0x6424f1cb6fda3087 Count: 1
-Difference: 0x4d645bc378d17ea1 Count: 1
-Difference: 0xecebc08933e6b8dd Count: 1
-Difference: 0xb5b5a71d8c0fa532 Count: 1
-Difference: 0x6bafd456f4ea9fb3 Count: 1
-Difference: 0x1f734d20fa57d8e9 Count: 1
-Difference: 0xe48f60e54aeb1ad0 Count: 1
-Difference: 0x4c01277097e92e52 Count: 1
-Difference: 0xd77f4d284876284 Count: 1
-Difference: 0xb045daeebe001a79 Count: 1
-Difference: 0x83455479f9b56d1b Count: 1
-Difference: 0xbf3705c7e4a08271 Count: 1
-Difference: 0x5dbf6b119ebc195d Count: 1
-Difference: 0xe7591066f7a86c96 Count: 1
-Difference: 0x397c5726ba6d9a7d Count: 1
-Difference: 0x4cf02b023a1a3b0 Count: 1
-Difference: 0xffcb7137be2c6191 Count: 1
-Difference: 0x4f6cbbc65e18364a Count: 1
-Difference: 0xbe4e288b690f0cb Count: 1
-Difference: 0x1b04402323239ed5 Count: 1
-Difference: 0xf5968f34863663e3 Count: 1
-Difference: 0x585925c5f1dfccde Count: 1
-Difference: 0x55016ac54adef6c0 Count: 1
-Difference: 0x38b7d40d433e5e2e Count: 1
-Difference: 0x9da920e7fd3fbfb8 Count: 1
-Difference: 0x2ad9e8adfbaa349f Count: 1
-Difference: 0xe07d1389da2f0f46 Count: 1
-Difference: 0xd12f4c2535dbe863 Count: 1
-Difference: 0x9b69210485b759f Count: 1
-Difference: 0x31ae6008f832d6c9 Count: 1
-Difference: 0xe26108b683fc47de Count: 1
-Difference: 0x6fa9936647a85242 Count: 1
-Difference: 0x528fb3cecb1614f Count: 1
-Difference: 0x657b164536ecb21a Count: 1
-Difference: 0xefd8b0568cdfb315 Count: 1
-Difference: 0x83da7dcafce8ec0a Count: 1
-Difference: 0x6dfe7cd9825e27f4 Count: 1
-Difference: 0x9a01cc1387fdc639 Count: 1
-Difference: 0x1846a04d80abba01 Count: 1
-Difference: 0xa455ab68b1d23a68 Count: 1
-Difference: 0xdbc2becb22ace15d Count: 1
-Difference: 0x6a25c8865c53118a Count: 1
-Difference: 0x433fba863479956 Count: 1
-Difference: 0x3fdab46fccdcebb2 Count: 1
-Difference: 0xe9af25211cf1b014 Count: 1
-Difference: 0xa5e2870dd2a92882 Count: 1
-Difference: 0x9d16f399f2f9dd26 Count: 1
-Difference: 0x37e495f878db5fde Count: 1
-Difference: 0x478509e4defcef39 Count: 1
-Difference: 0x4f9ae5ba9d6d4f2b Count: 1
-Difference: 0x5e65eac0c13410cd Count: 1
-Difference: 0x7e66df6c4def1722 Count: 1
-Difference: 0xbaee2f475ab7f6f3 Count: 1
-Difference: 0xf90901ef18258879 Count: 1
-Difference: 0xa5e8038ab912ea4a Count: 1
-Difference: 0x7ead922919b1925a Count: 1
-Difference: 0x237fb11f7d71fb23 Count: 1
-Difference: 0x50b4c9a7288d0ff Count: 1
-Difference: 0x6f8adc0b146873b1 Count: 1
-Difference: 0xf3d36643ff3ef43e Count: 1
-Difference: 0x97620045bef777c3 Count: 1
-Difference: 0x8ac7ad5389b36d8c Count: 1
-Difference: 0x830b01f771983f8 Count: 1
-Difference: 0x7292519720c67ff5 Count: 1
-Difference: 0x61d58c1afb1a6140 Count: 1
-Difference: 0xac91e070a8433318 Count: 1
-Difference: 0x9bef001ada92456 Count: 1
-Difference: 0x6900693d2f3b3302 Count: 1
-Difference: 0x263461211550dc09 Count: 1
-Difference: 0x4dacc97362007d97 Count: 1
-Difference: 0x933a3da03be8c9a2 Count: 1
-Difference: 0x5ea82d2b45ca35d5 Count: 1
-Difference: 0x22bf7d0c27f38e02 Count: 1
-Difference: 0xce82201a2b5db74f Count: 1
-Difference: 0xeffc3950fe44c2ca Count: 1
-Difference: 0xb049c57dbc8df12b Count: 1
-Difference: 0x3e066942b09c11c2 Count: 1
-Difference: 0x1c335f6e4805162 Count: 1
-Difference: 0x5979af4646a48815 Count: 1
-Difference: 0x225e9b975bbd4895 Count: 1
-Difference: 0x7d5f918e7ad47762 Count: 1
-Difference: 0x9935443312b92169 Count: 1
-Difference: 0x132a0fb8904d162b Count: 1
-Difference: 0x9e154c7fb6691e0 Count: 1
-Difference: 0x748b376df55c3d83 Count: 1
-Difference: 0xfa77125728dd353b Count: 1
-Difference: 0xe037f2146bfaf40c Count: 1
-Difference: 0x86a73dceac57cf34 Count: 1
-Difference: 0x23f07cf0543f418f Count: 1
-Difference: 0x2cda1a29dd347e3a Count: 1
-Difference: 0xe9848a184b04b4d5 Count: 1
-Difference: 0x45d17b3d9485ca5e Count: 1
-Difference: 0xb7fb4fe022113c2d Count: 1
-Difference: 0xc4004f33b00a3a2a Count: 1
-Difference: 0x37b43e7f0144cf5b Count: 1
-Difference: 0x24565b2f95558f55 Count: 1
-Difference: 0x8fa82ad15206b216 Count: 1
-Difference: 0x83cf5656f04fcd49 Count: 1
-Difference: 0xbf449cd423b0fb93 Count: 1
-Difference: 0xac0fabf28e2f5084 Count: 1
-Difference: 0x63a8b99c469ebe74 Count: 1
-Difference: 0x6842f533f5ceaa08 Count: 1
-Difference: 0x4496b15ac20a0c5 Count: 1
-Difference: 0x909d518480111f3a Count: 1
-Difference: 0x8236bcffb19ac45b Count: 1
-Difference: 0xdb29a86c8e1e7bd0 Count: 1
-Difference: 0x4a07a7e5665e9f3a Count: 1
-Difference: 0x1cadad335945bc97 Count: 1
-Difference: 0x8ae900a24a3e6289 Count: 1
-Difference: 0xa50352f012fb644 Count: 1
-Difference: 0x42a44fa76f278461 Count: 1
-Difference: 0x1c7595ddc01f3893 Count: 1
-Difference: 0xfed64be30cadb369 Count: 1
-Difference: 0xcbd8b340c262b8b9 Count: 1
-Difference: 0xaca37ea7013e4566 Count: 1
-Difference: 0xc2e6b69fce9ff0a9 Count: 1
-Difference: 0xbc68a1bd6b10b141 Count: 1
-Difference: 0x34e7d0efd4ec5460 Count: 1
-Difference: 0x2e9cf18fd3fe7fea Count: 1
-Difference: 0x2c49c94a06f94c86 Count: 1
-Difference: 0x9dec258bf317901f Count: 1
-Difference: 0xf6dc481569304fa8 Count: 1
-Difference: 0xfa63fde59b73e56c Count: 1
-Difference: 0x3b3dace1352da742 Count: 1
-Difference: 0xd60cfe8c0f9ad9f2 Count: 1
-Difference: 0xf54334c909ff395c Count: 1
-Difference: 0xcb36ba4f91223425 Count: 1
-Difference: 0x6d7775d0882a8538 Count: 1
-Difference: 0xa2e74c8df21774a9 Count: 1
-Difference: 0x58fa58242003a68c Count: 1
-Difference: 0x3238004fdc6bdc7e Count: 1
-Difference: 0xf92a75c3e46a8fef Count: 1
-Difference: 0xe7db05b67cb505e5 Count: 1
-Difference: 0xee7606395846fa89 Count: 1
-Difference: 0xef4d110e500facb6 Count: 1
-Difference: 0x655afc292f4b6170 Count: 1
-Difference: 0x801b577ed5016acf Count: 1
-Difference: 0x4ecb9cf8827fb505 Count: 1
-Difference: 0x303fd3c7df115fe9 Count: 1
-Difference: 0x6be2312962b8b9f9 Count: 1
-Difference: 0xf928729796d2b2f6 Count: 1
-Difference: 0x197ae5e5091af4d2 Count: 1
-Difference: 0x40fa6c0989067384 Count: 1
-Difference: 0x3f4c07fd01c5779f Count: 1
-Difference: 0x5cdaafa4b5199ac9 Count: 1
-Difference: 0x8fc569a6aab99a72 Count: 1
-Difference: 0x96515021d797ef40 Count: 1
-Difference: 0x9c93d3c9532d3745 Count: 1
-Difference: 0xf77a431b892235f0 Count: 1
-Difference: 0x56fb9e1de70f3b1d Count: 1
-Difference: 0xf6cb2dda5bf6a6d9 Count: 1
-Difference: 0x93771ca05d4e08e8 Count: 1
-Difference: 0x2890f892cfd50dae Count: 1
-Difference: 0xf736a158726bc35c Count: 1
-Difference: 0x14c852a75c1d9ba3 Count: 1
-Difference: 0xf11aa7804ff1a4a Count: 1
-Difference: 0x344818a9a92e215 Count: 1
-Difference: 0x1522c76d57f6a97f Count: 1
-Difference: 0xb9ced03d4e93bfc6 Count: 1
-Difference: 0xa897d867d67d5a0f Count: 1
-Difference: 0x8d6e1fa63df92f4f Count: 1
-Difference: 0x45a40674969bb0ae Count: 1
-Difference: 0x84b654b0a1dc8865 Count: 1
-Difference: 0xf6d05e6e112d9484 Count: 1
-Difference: 0x449e0f6398e0177a Count: 1
-Difference: 0xc71c6acc167aad5c Count: 1
-Difference: 0xbdc4969b25f50167 Count: 1
-Difference: 0x3b7121f8fcb92fc1 Count: 1
-Difference: 0x12a87fe9ca73c9a3 Count: 1
-Difference: 0xa69f0141a9f9ade3 Count: 1
-Difference: 0xb5aede75f8ac9e8 Count: 1
-Difference: 0x35d2e860d0e8c937 Count: 1
-Difference: 0x8b3b9cbada17ce04 Count: 1
-Difference: 0x3b9a1c1bb9610959 Count: 1
-Difference: 0x51ce5862b9b60a24 Count: 1
-Difference: 0xe035f6d19e4602fd Count: 1
-Difference: 0xcfe6178d99bf10cb Count: 1
-Difference: 0x2ed5f5e991b6687f Count: 1
-Difference: 0xa7d846e0c3de00ea Count: 1
-Difference: 0x3d3caec53ab4f9f8 Count: 1
-Difference: 0x9c9fb105c0703c03 Count: 1
-Difference: 0x2edffede9122e260 Count: 1
-Difference: 0x53fe8646d69cc8d4 Count: 1
-Difference: 0xd4c7ed5fbd7dc58b Count: 1
-Difference: 0xa45c46f7bcb7a250 Count: 1
-Difference: 0x2521edd0a8ab7ff5 Count: 1
-Difference: 0xf1543143a66e2ac Count: 1
-Difference: 0x146fd3bdad6a384a Count: 1
-Difference: 0xc34c6582acda3ff2 Count: 1
-Difference: 0x9e210068e0bba9f5 Count: 1
-Difference: 0x1496e8bdbbf19b7d Count: 1
-Difference: 0x8766771b0c588a77 Count: 1
-Difference: 0x28355a2ee7d14cdd Count: 1
-Difference: 0xecbfb88815f6005 Count: 1
-Difference: 0xbee170017834042e Count: 1
-Difference: 0x9c15a9bf8cc4b376 Count: 1
-Difference: 0xf72b7edabda9d2cd Count: 1
-Difference: 0xd52860cf2646f130 Count: 1
-Difference: 0x9c018c0305e1460b Count: 1
-Difference: 0x7a9858115976e969 Count: 1
-Difference: 0xd260ad58960e05ef Count: 1
-Difference: 0xf0636b78daf09347 Count: 1
-Difference: 0xf9e3efa0635c2be3 Count: 1
-Difference: 0xc6b4dee43448d6d4 Count: 1
-Difference: 0x7783bcbd385101ef Count: 1
-Difference: 0xac5111e1834a800d Count: 1
-Difference: 0xd42d72af75c408dc Count: 1
-Difference: 0x6ef4770e772d6e28 Count: 1
-Difference: 0x7ca96f72b6f07210 Count: 1
-Difference: 0x946ae3839b09b439 Count: 1
-Difference: 0xbaa8cbfee562f73c Count: 1
-Difference: 0xf5703a56a11dfb9d Count: 1
-Difference: 0x92e52fc35d2608b6 Count: 1
-Difference: 0x865547b2f810f7c6 Count: 1
-Difference: 0x3af6842f54d35fa9 Count: 1
-Difference: 0xcb0fab2c3f785829 Count: 1
-Difference: 0x3768a51a02d37d3c Count: 1
-Difference: 0x804a3156579d24 Count: 1
-Difference: 0xd037cfff02990983 Count: 1
-Difference: 0x40a51513b773bbc1 Count: 1
-Difference: 0x3e0c9ce708b0f25e Count: 1
-Difference: 0xc3d117783363e406 Count: 1
-Difference: 0x6279cd0e037e2641 Count: 1
-Difference: 0x1b9ac2e6f73db113 Count: 1
-Difference: 0xbc8e784f98d2ba2a Count: 1
-Difference: 0x80acddf50e14f1b0 Count: 1
-Difference: 0x8d5271c38544d80d Count: 1
-Difference: 0x6cb4c1902690d684 Count: 1
-Difference: 0x724f072a48560b3c Count: 1
-Difference: 0x4d48e8d2d72bea11 Count: 1
-Difference: 0xad4a1ee30c31601e Count: 1
-Difference: 0xbae5a7e9d43e399b Count: 1
-Difference: 0x8bb044ab825f665d Count: 1
-Difference: 0xd060bb4680da51a Count: 1
-Difference: 0xb7c99172d040fa5 Count: 1
-Difference: 0x952c2289756b3f89 Count: 1
-Difference: 0x3cc9e6685d47d4e Count: 1
-Difference: 0x40c171641d4c2f16 Count: 1
-Difference: 0xb003df96b32d518f Count: 1
-Difference: 0xdcf75596967b6c1 Count: 1
-Difference: 0xce3afad646ebea93 Count: 1
-Difference: 0x8a1833f3c9eac105 Count: 1
-Difference: 0xf0f1d5d526d43c8e Count: 1
-Difference: 0x46c067e59beb28fc Count: 1
-Difference: 0x36fa67ca8916546f Count: 1
-Difference: 0xce118fd2c444849c Count: 1
-Difference: 0x2260569c530875c3 Count: 1
-Difference: 0x220af777f17d10aa Count: 1
-Difference: 0xf359f6ab047ebff1 Count: 1
-Difference: 0x534850c84ce92803 Count: 1
-Difference: 0x4818aa7faac0deb4 Count: 1
-Difference: 0xd3daf5cc77903fbe Count: 1
-Difference: 0xc959d78f7de516f0 Count: 1
-Difference: 0x74445069e401feeb Count: 1
-Difference: 0x64da9a13eea5eebb Count: 1
-Difference: 0xda709b9be104cd86 Count: 1
-Difference: 0x96d5fd08dd6ca7cf Count: 1
-Difference: 0x10c79842de395727 Count: 1
-Difference: 0x4e8c8b3ad6cb16f3 Count: 1
-Difference: 0x9d2919337c1b3a7c Count: 1
-Difference: 0xf2e953ceb66eb1aa Count: 1
-Difference: 0x2b1937e5e9d8fb2e Count: 1
-Difference: 0x3bf30ea888b5e6ca Count: 1
-Difference: 0x5d7190ffdd934de Count: 1
-Difference: 0xd19b5230d79c168e Count: 1
-Difference: 0xea7b6577673ac4a6 Count: 1
-Difference: 0xfa26b5faf10b26b0 Count: 1
-Difference: 0x9b1a8bf021dfcdd4 Count: 1
-Difference: 0x63a142d50d1a18d Count: 1
-Difference: 0xdff06c8f527f5992 Count: 1
-Difference: 0xf18e7e8e582ab07 Count: 1
-Difference: 0x45e8fdf88276b4bf Count: 1
-Difference: 0xb32bc78e7d9ab2e2 Count: 1
-Difference: 0xe5dd3aff3057b49e Count: 1
-Difference: 0xd8c02bde8fe0ea91 Count: 1
-Difference: 0x9b61a2e589b14fe1 Count: 1
-Difference: 0xad77b5efc5606e60 Count: 1
-Difference: 0xaf474bbe2490b Count: 1
-Difference: 0x80490598bbf1c17a Count: 1
-Difference: 0x5e7e55c81e3f506c Count: 1
-Difference: 0x360a6fb6a914bf81 Count: 1
-Difference: 0x6517ce73d3871043 Count: 1
-Difference: 0xac159227be8f07ec Count: 1
-Difference: 0x9cac144b107e3f6d Count: 1
-Difference: 0xdb0b68faaff62300 Count: 1
-Difference: 0x6cf7633daa7b4cf9 Count: 1
-Difference: 0xfc7208b57ea73b23 Count: 1
-Difference: 0x21ceb563bb28ee34 Count: 1
-Difference: 0x24f257cf557f4748 Count: 1
-Difference: 0x8f7022fcf20f8357 Count: 1
-Difference: 0xcb3dee86652c14e7 Count: 1
-Difference: 0xd5b93bba678e475a Count: 1
-Difference: 0xb537a3fc926eadd Count: 1
-Difference: 0x8dbc9cb3ebdaf20d Count: 1
-Difference: 0x25a4ee07a1d9adca Count: 1
-Difference: 0x635040cbb86d9ce6 Count: 1
-Difference: 0x2e40c7350837c77c Count: 1
-Difference: 0x1e0319413a7a6a8 Count: 1
-Difference: 0x57f051f70dfe21bc Count: 1
-Difference: 0x2aedb57f6ffa4b56 Count: 1
-Difference: 0x301529889f453bbb Count: 1
-Difference: 0x77c3631b7397c969 Count: 1
-Difference: 0x687836e59e83489f Count: 1
-Difference: 0x8d868abe359f96d3 Count: 1
-Difference: 0xb7799784f9e89bcb Count: 1
-Difference: 0xac63a84fd6c175f7 Count: 1
-Difference: 0x114a89990d1288c0 Count: 1
-Difference: 0xaa4018b41b64fe32 Count: 1
-Difference: 0xefd0dbbc33e28fa5 Count: 1
-Difference: 0x56447bd76ec1f9ee Count: 1
-Difference: 0xea2ec3f63a6aeab3 Count: 1
-Difference: 0x66aa8ad4fccbe841 Count: 1
-Difference: 0x16604f0b7a1f475a Count: 1
-Difference: 0xf0903df1664e8c9d Count: 1
-Difference: 0xed48481ff376ca14 Count: 1
-Difference: 0x6bef0bd2957f33b5 Count: 1
-Difference: 0xd264a8449acc5496 Count: 1
-Difference: 0x194b42e108b02f48 Count: 1
-Difference: 0xb9648772490039c2 Count: 1
-Difference: 0x60215c732a46ce5f Count: 1
-Difference: 0x6237141ee8957ce9 Count: 1
-Difference: 0x29f22f1c9a1dea33 Count: 1
-Difference: 0xcd5da0a8bd47fc31 Count: 1
-Difference: 0x1f50858ad3d2236c Count: 1
-Difference: 0x2d2be7b39de2d7de Count: 1
-Difference: 0x2152e212b5ed7d67 Count: 1
-Difference: 0x81a9fdb53846d956 Count: 1
-Difference: 0x6cac14e362ff762f Count: 1
-Difference: 0xe6ab42829bafa3cb Count: 1
-Difference: 0x8c783952ca701698 Count: 1
-Difference: 0xb701d3ce38c8a8e9 Count: 1
-Difference: 0x6350460db3163878 Count: 1
-Difference: 0x90af40e04f87cdb Count: 1
-Difference: 0x3750e606925b3c0a Count: 1
-Difference: 0xec7941f86b1525dd Count: 1
-Difference: 0x65f8c8170d6750a Count: 1
-Difference: 0xcf657d87a37d2d06 Count: 1
-Difference: 0xc73ec57d5048d72f Count: 1
-Difference: 0x8f1fa7051925d284 Count: 1
-Difference: 0x32bc0ebeb8acfef8 Count: 1
-Difference: 0xeb275e419fabcbbe Count: 1
-Difference: 0x48ba8786819cfc9b Count: 1
-Difference: 0xb02f829e8cae13bc Count: 1
-Difference: 0x718c3fac2f78b995 Count: 1
-Difference: 0x2c7a485f2b910ad6 Count: 1
-Difference: 0xb0a0c0b9dea82b48 Count: 1
-Difference: 0xfec137d477fe9fee Count: 1
-Difference: 0x511d38a06adc74ba Count: 1
-Difference: 0x27ae8d3a7b342991 Count: 1
-Difference: 0xde1a9a4d3f9f6ad Count: 1
-Difference: 0x88a2caed942c5c32 Count: 1
-Difference: 0x7b691b0b92561ce9 Count: 1
-Difference: 0xc387bb8d80838f42 Count: 1
-Difference: 0xd452ba41df8edc42 Count: 1
-Difference: 0x4d68a444fc2708b4 Count: 1
-Difference: 0x180ad42d9593d8bf Count: 1
-Difference: 0xe61c66b5e701be09 Count: 1
-Difference: 0xa332303df0565150 Count: 1
-Difference: 0xf3a20d5a6a914faa Count: 1
-Difference: 0x152d33a28c0ddf55 Count: 1
-Difference: 0xde02456598c0d677 Count: 1
-Difference: 0xdc3534f41cfd1e9a Count: 1
-Difference: 0xfbac0fd7b358bc08 Count: 1
-Difference: 0xe5f3c5826d8d5ec7 Count: 1
-Difference: 0x92838bd962892f4a Count: 1
-Difference: 0x322278bf091e5c0a Count: 1
-Difference: 0xd18e7d4515bb792c Count: 1
-Difference: 0x8bad04b073334c8 Count: 1
-Difference: 0xf445b349c2683b4b Count: 1
-Difference: 0x83fc2cc75de3fbbe Count: 1
-Difference: 0x25b7f4ff609fd43 Count: 1
-Difference: 0x79ceba4dd1805e0f Count: 1
-Difference: 0xc66fff76e2c60939 Count: 1
-Difference: 0x8c5415699a1ddb4a Count: 1
-Difference: 0x5a66cd622ea1ed69 Count: 1
-Difference: 0xdbc13f4576c08d35 Count: 1
-Difference: 0xdab5fd341f13fc24 Count: 1
-Difference: 0x45ab1c8d984e98f8 Count: 1
-Difference: 0xf9da3e705b44c0f5 Count: 1
-Difference: 0xcc4f06647c4d3ad1 Count: 1
-Difference: 0xea0f7731337c8649 Count: 1
-Difference: 0x6e2cb0d593df4f7a Count: 1
-Difference: 0x2f684b0dbe41652 Count: 1
-Difference: 0x73938c3eb54f59a3 Count: 1
-Difference: 0xe0758a336e31b0bb Count: 1
-Difference: 0x73662868c19cd0ba Count: 1
-Difference: 0x68607eb65d0b8756 Count: 1
-Difference: 0x2191de7b39151f50 Count: 1
-Difference: 0xb7208a2739118928 Count: 1
-Difference: 0xf568796448ba1049 Count: 1
-Difference: 0x2ef67086c77abe13 Count: 1
-Difference: 0xc72f063ecead41df Count: 1
-Difference: 0x12001576c055355b Count: 1
-Difference: 0xa7537cb639514d11 Count: 1
-Difference: 0x57cbb110047b2c6e Count: 1
-Difference: 0x29e7e5360a92655e Count: 1
-Difference: 0xec0d251fe08508e Count: 1
-Difference: 0x41ac2f33da84c745 Count: 1
-Difference: 0x67193d704ea6a6f0 Count: 1
-Difference: 0x3d27018e383bc64b Count: 1
-Difference: 0x21b636cc7c595978 Count: 1
-Difference: 0x34c774222d4c2734 Count: 1
-Difference: 0xc7dcb48b81037774 Count: 1
-Difference: 0xaa402fd4dc4e8f5e Count: 1
-Difference: 0xaa28ae2d9715f082 Count: 1
-Difference: 0xcadf0fd8caddf805 Count: 1
-Difference: 0xc53424fa7a162f8a Count: 1
-Difference: 0x491f32b4346cfd2c Count: 1
-Difference: 0x210d9d67b62ac33a Count: 1
-Difference: 0xbad625702d6df702 Count: 1
-Difference: 0x1f12a3e943eecd5f Count: 1
-Difference: 0xe4ef56349de0c83e Count: 1
-Difference: 0xa6725063b15da483 Count: 1
-Difference: 0xbb3ead68f3c63fd9 Count: 1
-Difference: 0x68bac4f2b424fdb7 Count: 1
-Difference: 0xc0141ebd8fff1c10 Count: 1
-Difference: 0xf18538dfe13b7d23 Count: 1
-Difference: 0x35b00ab116ab6d6c Count: 1
-Difference: 0xbf86cecd16d7c464 Count: 1
-Difference: 0x7ae019ba2b3970f2 Count: 1
-Difference: 0x46e7ec41cd55a499 Count: 1
-Difference: 0xac58f3134dcc3636 Count: 1
-Difference: 0xc8f3dd0c36d95105 Count: 1
-Difference: 0x5693fcf91e0aac7a Count: 1
-Difference: 0xca6590ae1d77756c Count: 1
-Difference: 0xf365ae1239a09222 Count: 1
-Difference: 0x8ec645bc710cba2d Count: 1
-Difference: 0xb5e99edbb7b0fc21 Count: 1
-Difference: 0xc414aed1c6ab39ad Count: 1
-Difference: 0xb9776525a0fdc94 Count: 1
-Difference: 0x5b2b35c0f5d062fa Count: 1
-Difference: 0xf52356975327dded Count: 1
-Difference: 0x69e71ff25f4963c0 Count: 1
-Difference: 0x9bcddcaa4ae057c6 Count: 1
-Difference: 0x9993a2723b130112 Count: 1
-Difference: 0x73f99a2ab005b00f Count: 1
-Difference: 0xa7151e3a950cd01e Count: 1
-Difference: 0xea09cac98231d3be Count: 1
-Difference: 0xee6d29622722464a Count: 1
-Difference: 0x32a93652071ae7bc Count: 1
-Difference: 0x87b99cc52340a856 Count: 1
-Difference: 0x4522a156536ab23c Count: 1
-Difference: 0x38cab8911cd68af0 Count: 1
-Difference: 0x8145d5770798d4a0 Count: 1
-Difference: 0x1fe8d49b460cc17d Count: 1
-Difference: 0x54264e59aaa4475 Count: 1
-Difference: 0xe1601a7ccaccea11 Count: 1
-Difference: 0x3c1311bb929c1ae9 Count: 1
-Difference: 0x1a27b16933a4a9b7 Count: 1
-Difference: 0x863aeabcf8681f4 Count: 1
-Difference: 0x17bf3bc921ed9fcd Count: 1
-Difference: 0xb8af0a68dc16b6be Count: 1
-Difference: 0xbcf5481594e22322 Count: 1
-Difference: 0x5c98163a8cef460f Count: 1
-Difference: 0xbd467073a8f55446 Count: 1
-Difference: 0x636c77c64659bd1d Count: 1
-Difference: 0xcfb9c7014e967693 Count: 1
-Difference: 0xd3e47d80fd3fc9ae Count: 1
-Difference: 0x9d6125b3b3d148db Count: 1
-Difference: 0x851b05efca2a270b Count: 1
-Difference: 0x2949748711dd8947 Count: 1
-Difference: 0x5c45a1ef7f98aae4 Count: 1
-Difference: 0x3174682364b39d8a Count: 1
-Difference: 0xd253074461827e30 Count: 1
-Difference: 0xb457ca6f39cea51f Count: 1
-Difference: 0xd772c2f38463b0bb Count: 1
-Difference: 0xe8dbae30a12e2937 Count: 1
-Difference: 0x426e0093c2c7e34b Count: 1
-Difference: 0xab06ba45017cf3b3 Count: 1
-Difference: 0x7d3a7688c87a6db8 Count: 1
-Difference: 0xfa78cd6a7b6a78a9 Count: 1
-Difference: 0x2cdc4fe6dd4b1d30 Count: 1
-Difference: 0x1aa5575973b08165 Count: 1
-Difference: 0x40679c53dfc67757 Count: 1
-Difference: 0xf3db2ee456337f86 Count: 1
-Difference: 0x665429bdca1936aa Count: 1
-Difference: 0x86923a0e92fa8e75 Count: 1
-Difference: 0xe59a5292bbb3d1e1 Count: 1
-Difference: 0x8151d7c104fdce50 Count: 1
-Difference: 0x7c7408ac1ec30655 Count: 1
-Difference: 0xcba00018f1611016 Count: 1
-Difference: 0x1ad87b6af69a53e0 Count: 1
-Difference: 0x3e672fb2aa8820cc Count: 1
-Difference: 0x3670f13f8a1de936 Count: 1
-Difference: 0x5daa9eb6d211e26c Count: 1
-Difference: 0x5f0eb3b0182cd29 Count: 1
-Difference: 0x5e8d0de737bbc5b2 Count: 1
-Difference: 0x9ae361850fd3f2e7 Count: 1
-Difference: 0x451efa32d70909c5 Count: 1
-Difference: 0xc846937d38027b21 Count: 1
-Difference: 0x6e4cfcc9aff7e3d8 Count: 1
-Difference: 0x6a44b45556bb83a6 Count: 1
-Difference: 0xfec418202a311a3e Count: 1
-Difference: 0x2993ff825e08a59d Count: 1
-Difference: 0x1c8c3d76d64811d7 Count: 1
-Difference: 0x82b6f397d9d3892f Count: 1
-Difference: 0xaa7c789225711fa7 Count: 1
-Difference: 0x318e0c6b84f6f0fc Count: 1
-Difference: 0x364e15e260f5f5b7 Count: 1
-Difference: 0x5da64c3aeeaf145b Count: 1
-Difference: 0xe060e57bd5a83347 Count: 1
-Difference: 0x2ff0de4253023063 Count: 1
-Difference: 0xcf62dc3ee349bf14 Count: 1
-Difference: 0xbd0a1b5cacd5f2e9 Count: 1
-Difference: 0x2e0d81a72f087309 Count: 1
-Difference: 0xacf8d9fe7380bed3 Count: 1
-Difference: 0x2efe8cabc4eca6dd Count: 1
-Difference: 0xc328c5664829a441 Count: 1
-Difference: 0xdee9ae830e881cb2 Count: 1
-Difference: 0x993c3584c6388e24 Count: 1
-Difference: 0xef6d9b824a2126cf Count: 1
-Difference: 0x3b4a0892b847e689 Count: 1
-Difference: 0x2668fb0081b63462 Count: 1
-Difference: 0xf9cbbd3f9315bad1 Count: 1
-Difference: 0x6e36512ea2d82a6c Count: 1
-Difference: 0xe1d74131dad0468b Count: 1
-Difference: 0x22f52a6df543b797 Count: 1
-Difference: 0xec73b2c1fa1f37c7 Count: 1
-Difference: 0xf9f4ef066e95b772 Count: 1
-Difference: 0x3366021b1c4f154f Count: 1
-Difference: 0x4f5c2e92b724cece Count: 1
-Difference: 0x97ea2f3d55e1419b Count: 1
-Difference: 0xabb6117fe3b949c Count: 1
-Difference: 0x5d9f9b04f31f8bd Count: 1
-Difference: 0xc9b9af72e4a2e0a5 Count: 1
-Difference: 0x913ec74eff8f9981 Count: 1
-Difference: 0xb16cf829ec11c6a3 Count: 1
-Difference: 0xc00fbc322eb8b218 Count: 1
-Difference: 0x24f23d41db711c81 Count: 1
-Difference: 0x85c9cb84c8536ca7 Count: 1
-Difference: 0xf3832d0c9c9db194 Count: 1
-Difference: 0x65a5f996e072aa1b Count: 1
-Difference: 0xf6920b74fbbb1d27 Count: 1
-Difference: 0xece22ce9be5d1898 Count: 1
-Difference: 0x74936fc32204c59b Count: 1
-Difference: 0x47df9ba394bb2212 Count: 1
-Difference: 0x7ba677919b5dac0f Count: 1
-Difference: 0xfbf51f02508c773d Count: 1
-Difference: 0xd21a34799ef83850 Count: 1
-Difference: 0x9c544a514cd8819 Count: 1
-Difference: 0x736481a1e7be55b6 Count: 1
-Difference: 0x71dd11f221071447 Count: 1
-Difference: 0xdefbc1eca27dd716 Count: 1
-Difference: 0xf6130c4e6e4681e7 Count: 1
-Difference: 0xcdd942540ef27294 Count: 1
-Difference: 0xc58a4aac62e3e307 Count: 1
-Difference: 0xfeffc732e180fbf0 Count: 1
-Difference: 0x11df53aa26fde9b9 Count: 1
-Difference: 0x17f40ef9383851a5 Count: 1
-Difference: 0x8e0728115da9a849 Count: 1
-Difference: 0xbcdf2da53f3b5b8b Count: 1
-Difference: 0x953d6e37c9fdac84 Count: 1
-Difference: 0xa47a8f6d3109e5ef Count: 1
-Difference: 0x1b09f77b2e396fff Count: 1
-Difference: 0xa730e9b69ba8e21e Count: 1
-Difference: 0x9c52c7bcc313b247 Count: 1
-Difference: 0xc5eeb827257d1236 Count: 1
-Difference: 0xceb0f2ef68a5f40e Count: 1
-Difference: 0x6700252524eaf2d Count: 1
-Difference: 0x6b807072bba9318 Count: 1
-Difference: 0xdd618dfca528844 Count: 1
-Difference: 0xf7e33323c6c71f28 Count: 1
-Difference: 0xf6077ac5b78d1bd4 Count: 1
-Difference: 0x3c67407ec505689a Count: 1
-Difference: 0x700dcc6452ecc9e3 Count: 1
-Difference: 0xe1f1c1bff6abf3c2 Count: 1
-Difference: 0x71e6b0b6fd262ae Count: 1
-Difference: 0xb3667b49493cc700 Count: 1
-Difference: 0x8238d3463b4ccb36 Count: 1
-Difference: 0xf5c928691af10316 Count: 1
-Difference: 0x5477fcd566463b47 Count: 1
-Difference: 0x4f5ceca740b1b7d3 Count: 1
-Difference: 0x7a71f921b292eb55 Count: 1
-Difference: 0xb5cb18becf785e2b Count: 1
-Difference: 0xca1d31d724ea4745 Count: 1
-Difference: 0xbf2584ebd0387f8d Count: 1
-Difference: 0x7210305d7a4a7f41 Count: 1
-Difference: 0xc80f397582020b02 Count: 1
-Difference: 0xac1bb67fac3b630e Count: 1
-Difference: 0x707a19b9ec851392 Count: 1
-Difference: 0x9de72931a4f1877 Count: 1
-Difference: 0xe1b20dd8dc3d3836 Count: 1
-Difference: 0x2f10508db31d14e8 Count: 1
-Difference: 0xab09c27522efd36e Count: 1
-Difference: 0x3c6c6f42ec214f2a Count: 1
-Difference: 0x338e3c965d25f02c Count: 1
-Difference: 0x27bcfdcf57b4bcd3 Count: 1
-Difference: 0x6a758465b2497797 Count: 1
-Difference: 0xe90bca76faaeb659 Count: 1
-Difference: 0xdd285e4c30eb91ed Count: 1
-Difference: 0x8bb6531910211038 Count: 1
-Difference: 0x747e120dfa7b2511 Count: 1
-Difference: 0x3cc3853f17598bf3 Count: 1
-Difference: 0x7b816f70dfdfcc0e Count: 1
-Difference: 0x3fe56eaeb8b88bc7 Count: 1
-Difference: 0xf8f673c9eaeb489b Count: 1
-Difference: 0xc81b682716bf5de5 Count: 1
-Difference: 0xd73bcb73e7ff86e3 Count: 1
-Difference: 0x32f5eb92c58fc8aa Count: 1
-Difference: 0x22955e0446c76d8e Count: 1
-Difference: 0x3077b4462620563 Count: 1
-Difference: 0xd49adfa9fc8d1c1e Count: 1
-Difference: 0x989a8522150a8509 Count: 1
-Difference: 0x481ab7e4fa53e148 Count: 1
-Difference: 0xcb4224e409c1300e Count: 1
-Difference: 0xbecd017164e4c996 Count: 1
-Difference: 0xab11ac5d06d676b9 Count: 1
-Difference: 0x37dfc8c96b6a7577 Count: 1
-Difference: 0x971f5827c4c68718 Count: 1
-Difference: 0x7dd905019d28a933 Count: 1
-Difference: 0x9f8faf208554b218 Count: 1
-Difference: 0x6880d86e78394710 Count: 1
-Difference: 0x1b8a956512ecdef5 Count: 1
-Difference: 0x5c04465e31621db5 Count: 1
-Difference: 0xd149a7b3ec7f1db1 Count: 1
-Difference: 0x5efba33ed5bdbd79 Count: 1
-Difference: 0xc32936c2a647bfd9 Count: 1
-Difference: 0x4adae077c1f65fbd Count: 1
-Difference: 0x68409bc639a3a402 Count: 1
-Difference: 0xcfda5ed545bbf33d Count: 1
-Difference: 0x96218fa77f062d7 Count: 1
-Difference: 0x3c115e7f93f27af2 Count: 1
-Difference: 0x4d94e9c04b0bf65b Count: 1
-Difference: 0xfdcc9bca3e7e3543 Count: 1
-Difference: 0x74842b57e9fdaf4d Count: 1
-Difference: 0xc0544b4b7346efdf Count: 1
-Difference: 0x74b508e690e6154d Count: 1
-Difference: 0xfccc372bd33add66 Count: 1
-Difference: 0x44d526e930670c01 Count: 1
-Difference: 0xa23daeedf731a5c7 Count: 1
-Difference: 0xec247e41c1e44a88 Count: 1
-Difference: 0x20e8339d75768daa Count: 1
-Difference: 0xa9751f9b93bfbc01 Count: 1
-Difference: 0xb080943a37df5cc Count: 1
-Difference: 0xb833ccac54f7c8ae Count: 1
-Difference: 0xd0557a4014e95135 Count: 1
-Difference: 0xaf324383cb059079 Count: 1
-Difference: 0x8c9aebfd8efaf617 Count: 1
-Difference: 0xa7c40bdcf7e665c8 Count: 1
-Difference: 0x3ab7d1c1aeb0c4a4 Count: 1
-Difference: 0x50f9879f5dfce392 Count: 1
-Difference: 0xe8545fc7f4b8c1e5 Count: 1
-Difference: 0x7b19fe2e267c8574 Count: 1
-Difference: 0x3c97acecac7cca18 Count: 1
-Difference: 0xe30b65ac7f2a09e9 Count: 1
-Difference: 0xb96241e373386e8e Count: 1
-Difference: 0x2bc66c598ca25fa0 Count: 1
-Difference: 0x5f0fbd94c15683de Count: 1
-Difference: 0xbdf02c2f086c195d Count: 1
-Difference: 0x9e3e194444416d1b Count: 1
-Difference: 0x9a7bd4991074996a Count: 1
-Difference: 0x485afe1b2492dcf5 Count: 1
-Difference: 0xbdf797c8ae66220a Count: 1
-Difference: 0x35621009999ddf8f Count: 1
-Difference: 0xe07ae6de8a34e4a2 Count: 1
-Difference: 0xaa5e514985109aa Count: 1
-Difference: 0x77c43ac2ee4fdf62 Count: 1
-Difference: 0xe58961783ee7950d Count: 1
-Difference: 0x56a953e990e7848c Count: 1
-Difference: 0x8e4b2c81985ca4b3 Count: 1
-Difference: 0xa34048acb2775913 Count: 1
-Difference: 0x2a77cf6f27a4fbb7 Count: 1
-Difference: 0x52a73a99ecdfd9ba Count: 1
-Difference: 0x7af438e438162d0b Count: 1
-Difference: 0xbc988ff1fcb3b396 Count: 1
-Difference: 0x55339e6736456a91 Count: 1
-Difference: 0xedb87da49bc52edb Count: 1
-Difference: 0xdbb5f985349acc4a Count: 1
-Difference: 0x1bda5e2a04b4d7e3 Count: 1
-Difference: 0x76545f6f40c3f18 Count: 1
-Difference: 0xfb84219cf65495f4 Count: 1
-Difference: 0xa89ccc05d9ab2a7c Count: 1
-Difference: 0xd674f1c7381facc4 Count: 1
-Difference: 0xb284a833eaaa5691 Count: 1
-Difference: 0x1fd936b0d83a5382 Count: 1
-Difference: 0x942b0263ca33f6d3 Count: 1
-Difference: 0x7d87e037331524e3 Count: 1
-Difference: 0x76881eca17cc2ac2 Count: 1
-Difference: 0xe437c7c2771b3402 Count: 1
-Difference: 0x5adc525df34866b1 Count: 1
-Difference: 0x5984cbba4668b679 Count: 1
-Difference: 0x3a9970eff7594ef2 Count: 1
-Difference: 0x2b857e069ac73ab2 Count: 1
-Difference: 0xff62dba1df1c1379 Count: 1
-Difference: 0xf04b5ae0837b3e45 Count: 1
-Difference: 0xb73a5e986c40c4b1 Count: 1
+
+=== Differential Attack ===
+Master Key: 0x123456789abcdef
+Initial Difference (Delta_0): 0xf0000000f
+
+Pair 1:
+P1: 0xd2086a061c0c8886, P2: 0xd2086a091c0c8889
+
+--- Round 1 ---
+After S-box: B1 = 0x3dfc5dc76d6fffc, B2 = 0x3dfc5d476d6fff4
+After Key XOR: B1 = 0x2fc80bbff7d3213, B2 = 0x2fc80b3ff7d321b
+After Permutation: B1 = 0x252d9a176a6b95f3, B2 = 0x252f9a176a6b9573
+Round 1 Difference: 0x2000000000080
+Active S-boxes in Round 1: [2, 13]
+
+--- Round 2 ---
+After S-box: B1 = 0x3a304571c5ce4a82, B2 = 0x3a384571c5ce4a12
+After Key XOR: B1 = 0x3a30445280a9c329, B2 = 0x3a38445280a9c3b9
+After Permutation: B1 = 0x40226107152f5c44, B2 = 0x4026610f172f5c44
+Round 2 Difference: 0x4000802000000
+Active S-boxes in Round 2: [7, 9, 13]
+
+--- Round 3 ---
+After S-box: B1 = 0x9d33c7d17a38a699, B2 = 0x9d3cc7d87138a699
+After Key XOR: B1 = 0x9d33c7d17b1be3fe, B2 = 0x9d3cc7d8701be3fe
+After Permutation: B1 = 0xed7f609b6df66b4e, B2 = 0xed77608b2ff64ad6
+Round 3 Difference: 0x8001042002198
+Active S-boxes in Round 3: [1, 2, 3, 4, 7, 8, 10, 13]
+
+Pair 2:
+P1: 0x7233ef9576416848, P2: 0x7233ef9a76416847
+
+--- Round 1 ---
+After S-box: B1 = 0x1322b84a1c97cf9f, B2 = 0x1322b8451c97cf91
+After Key XOR: B1 = 0x1201fd2d953c0270, B2 = 0x1201fd22953c027e
+After Permutation: B1 = 0x6384087404e8efe0, B2 = 0x6986086404e9ef62
+Round 1 Difference: 0xa02001000010082
+Active S-boxes in Round 1: [1, 2, 5, 10, 13, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0xc2f9df19d9bfb8bd, B2 = 0xc4fcdfc9d9b4b8c3
+After Key XOR: B1 = 0xc2f9de3a9cd83116, B2 = 0xc4fcdeea9cd33168
+After Permutation: B1 = 0xe9e59f25436364a3, B2 = 0xe5f3bfa2474346b1
+Round 2 Difference: 0xc16208704202212
+Active S-boxes in Round 2: [1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15]
+
+--- Round 3 ---
+After S-box: B1 = 0xb4ba483a92c2c952, B2 = 0xba82e85391929ce7
+After Key XOR: B1 = 0xb4ba483a93e18c35, B2 = 0xba82e85390b1d980
+After Permutation: B1 = 0xb82c99a3960f5d88, B2 = 0xb100717f114d4c0d
+Round 3 Difference: 0x92ce8dc87421185
+Active S-boxes in Round 3: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+Pair 3:
+P1: 0xf3ea65b8e2673cb, P2: 0xf3ea6548e2673c4
+
+--- Round 1 ---
+After S-box: B1 = 0xd82b5caefb3c126e, B2 = 0xd82b5ca9fb3c1269
+After Key XOR: B1 = 0xd90819c97297df81, B2 = 0xd90819ce7297df86
+After Permutation: B1 = 0xb598653aab9498c5, B2 = 0xbf98652aab9588c7
+Round 1 Difference: 0xa00001000011002
+Active S-boxes in Round 1: [1, 4, 5, 10, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0xea4fca255e494f6a, B2 = 0xe84fca355e4aff61
+After Key XOR: B1 = 0xea4fcb061b2ec6c1, B2 = 0xe84fcb161b2d76ca
+After Permutation: B1 = 0xa258462cd2edf35c, B2 = 0xa24b462bd2e9e35f
+Round 2 Difference: 0x13000700041003
+Active S-boxes in Round 2: [1, 4, 5, 9, 13, 14]
+
+--- Round 3 ---
+After S-box: B1 = 0x53af9c3603b082a6, B2 = 0x539e9c3e03b4b2a8
+After Key XOR: B1 = 0x53af9c360293c7c1, B2 = 0x539e9c3e0297f7cf
+After Permutation: B1 = 0x43b85d2f83553a58, B2 = 0x4b9b5d2f83579adb
+Round 3 Difference: 0x82300000002a083
+Active S-boxes in Round 3: [1, 2, 4, 5, 13, 14, 15]
+
+Pair 4:
+P1: 0xe085680b0f4f53ea, P2: 0xe08568040f4f53e5
+
+--- Round 1 ---
+After S-box: B1 = 0xbdfacfded898a2b5, B2 = 0xbdfacfd9d898a2ba
+After Key XOR: B1 = 0xbcd98ab951336f5a, B2 = 0xbcd98abe51336f55
+After Permutation: B1 = 0xb5575ab39b4a2bc6, B2 = 0xbf555aa39b4b3bc4
+Round 1 Difference: 0xa02001000011002
+Active S-boxes in Round 1: [1, 4, 5, 10, 13, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0xeaa1a5e24e953e6c, B2 = 0xe8aaa5524e9e2e69
+After Key XOR: B1 = 0xeaa1a4c10bf2b7c7, B2 = 0xe8aaa4710bf9a7c2
+After Permutation: B1 = 0xcd39b55cd14c3347, B2 = 0xc129bd5bd36c034e
+Round 2 Difference: 0xc10080702203009
+Active S-boxes in Round 2: [1, 4, 6, 7, 9, 11, 14, 15]
+
+--- Round 3 ---
+After S-box: B1 = 0x6024eaa607962291, B2 = 0x6734e0ae02c6d29b
+After Key XOR: B1 = 0x6024eaa606b567f6, B2 = 0x6734e0ae03e597fc
+After Permutation: B1 = 0xf6d4d6a9549c272, B2 = 0xe2e8dce955fc3d1
+Round 3 Difference: 0x143c0a4001601a3
+Active S-boxes in Round 3: [1, 2, 3, 5, 6, 9, 10, 12, 13, 14, 15]
+
+Pair 5:
+P1: 0xdf6b346fa631b5ad, P2: 0xdf6b3460a631b5a2
+
+--- Round 1 ---
+After S-box: B1 = 0x8ce29c85c27ea50, B2 = 0x8ce29cd5c27ea53
+After Key XOR: B1 = 0x9ed6cafd58c27bf, B2 = 0x9ed6caad58c27bc
+After Permutation: B1 = 0x6e271b788f31f5f6, B2 = 0x6c271b688f31e5f4
+Round 1 Difference: 0x200001000001002
+Active S-boxes in Round 1: [1, 4, 10, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0xcb317e1ff8278a8c, B2 = 0xc6317ecff827ba89
+After Key XOR: B1 = 0xcb317f3cbd400327, B2 = 0xc6317fecbd403322
+After Permutation: B1 = 0xeae08c65659275e6, B2 = 0xe6e1ace4658265e3
+Round 2 Difference: 0xc01208100101005
+Active S-boxes in Round 2: [1, 4, 6, 9, 10, 12, 13, 15]
+
+--- Round 3 ---
+After S-box: B1 = 0xb5bdf6caca431abc, B2 = 0xbcb756b9caf3cab2
+After Key XOR: B1 = 0xb5bdf6cacb605fdb, B2 = 0xbcb756b9cbd08fd5
+After Permutation: B1 = 0xd4eef0c8db5b7fd3, B2 = 0xddec9999d9067fdc
+Round 3 Difference: 0x9026951025d000f
+Active S-boxes in Round 3: [1, 5, 6, 7, 9, 10, 11, 12, 13, 15]
+
+Pair 6:
+P1: 0x336d48e870fbc52c, P2: 0x336d48e770fbc523
+
+--- Round 1 ---
+After S-box: B1 = 0x22c09fbf1d8e6a36, B2 = 0x22c09fb11d8e6a32
+After Key XOR: B1 = 0x23e3dad89425a7d9, B2 = 0x23e3dad69425a7dd
+After Permutation: B1 = 0x24e7322f915cf6e8, B2 = 0x2ee7322f915df668
+Round 1 Difference: 0xa00000000010080
+Active S-boxes in Round 1: [2, 5, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0x39b1233847a68cbf, B2 = 0x3bb1233847a08ccf
+After Key XOR: B1 = 0x39b1221b02c10514, B2 = 0x3bb1221b02c70564
+After Permutation: B1 = 0x86c915391132884, B2 = 0x87891579513aa84
+Round 2 Difference: 0x14000404008200
+Active S-boxes in Round 2: [3, 4, 7, 9, 13, 14]
+
+--- Round 3 ---
+After S-box: B1 = 0xdfc647a247723ff9, B2 = 0xdf1f47a14a7255f9
+After Key XOR: B1 = 0xdfc647a246517a9e, B2 = 0xdf1f47a14b51109e
+After Permutation: B1 = 0xdd4fde8e0891487f, B2 = 0xcd4e8c9e4a92691f
+Round 3 Difference: 0x1001521042032160
+Active S-boxes in Round 3: [2, 3, 4, 5, 7, 8, 10, 11, 12, 13, 16]
+
+Pair 7:
+P1: 0xc5024b06e0ba33e, P2: 0xc5024bf6e0ba331
+
+--- Round 1 ---
+After S-box: B1 = 0xd6ad39edcbde522b, B2 = 0xd6ad39e8cbde5227
+After Key XOR: B1 = 0xd78e7c8a42759fc4, B2 = 0xd78e7c8f42759fc8
+After Permutation: B1 = 0xdd8894ee8b1dcad9, B2 = 0xd78a94fe8b1dcad9
+Round 1 Difference: 0xa02001000000000
+Active S-boxes in Round 1: [10, 13, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0xff49bbfe706504, B2 = 0x1f5498bfe706504
+After Key XOR: B1 = 0xff4898bb17ecaf, B2 = 0x1f548a8bb17ecaf
+After Permutation: B1 = 0x3d3b522be606f59a, B2 = 0x3d3b5a2ae416f592
+Round 2 Difference: 0x80102100008
+Active S-boxes in Round 2: [1, 6, 7, 9, 11]
+
+--- Round 3 ---
+After S-box: B1 = 0x202ea33ebcdc8a45, B2 = 0x202ea535b97c8a43
+After Key XOR: B1 = 0x202ea33ebdffcf22, B2 = 0x202ea535b85fcf24
+After Permutation: B1 = 0x3370c943f7ed85fa, B2 = 0x7b30c853f7e48458
+Round 3 Difference: 0x48400110000901a2
+Active S-boxes in Round 3: [1, 2, 3, 5, 10, 11, 14, 15, 16]
+
+Pair 8:
+P1: 0xb11832242d4437dc, P2: 0xb118322b2d4437d3
+
+--- Round 1 ---
+After S-box: B1 = 0xe77f233930992106, B2 = 0xe77f233e30992102
+After Key XOR: B1 = 0xe65c665eb932ece9, B2 = 0xe65c6659b932eced
+After Permutation: B1 = 0xf35366cdf60f5790, B2 = 0xf95366ddf60e5790
+Round 1 Difference: 0xa00001000010000
+Active S-boxes in Round 1: [5, 10, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0x82a2cc608cd8a14d, B2 = 0x84a2cc008cdba14d
+After Key XOR: B1 = 0x82a2cd43c9bf28e6, B2 = 0x84a2cd23c9bc28e6
+After Permutation: B1 = 0xd931313e4ce9c70a, B2 = 0xd92119b84ce9c70a
+Round 2 Difference: 0x10288600000000
+Active S-boxes in Round 2: [9, 10, 11, 12, 14]
+
+--- Round 3 ---
+After S-box: B1 = 0x427272b96b461d5, B2 = 0x43774ef96b461d5
+After Key XOR: B1 = 0x427272b979724b2, B2 = 0x43774ef979724b2
+After Permutation: B1 = 0x617d09da8481a5ba, B2 = 0x67bd29da8403e5ba
+Round 3 Difference: 0x6c0200000824000
+Active S-boxes in Round 3: [4, 5, 6, 12, 14, 15]
+
+Pair 9:
+P1: 0x8238e5719309ab49, P2: 0x8238e57e9309ab46
+
+--- Round 1 ---
+After S-box: B1 = 0xf32fba1742d45e94, B2 = 0xf32fba1b42d45e9c
+After Key XOR: B1 = 0xf20cff70cb7f937b, B2 = 0xf20cff7ccb7f9373
+After Permutation: B1 = 0xc1deac675fecdf53, B2 = 0xc3dcac675fecdfd3
+Round 1 Difference: 0x202000000000080
+Active S-boxes in Round 1: [2, 13, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0x670b56c1a8b608a2, B2 = 0x620656c1a8b60802
+After Key XOR: B1 = 0x670b57e2edd18109, B2 = 0x620657e2edd181a9
+After Permutation: B1 = 0x45c2ad867b957528, B2 = 0x45c2ad0e7d855538
+Round 2 Difference: 0x8806102010
+Active S-boxes in Round 2: [2, 4, 6, 7, 9, 10]
+
+--- Round 3 ---
+After S-box: B1 = 0x9a6350fc1e4a1a3f, B2 = 0x9a6350db10faaa2f
+After Key XOR: B1 = 0x9a6350fc1f695f58, B2 = 0x9a6350db11d9ef48
+After Permutation: B1 = 0xb6aeea07c1286bed, B2 = 0xb5a3e31781256bcc
+Round 3 Difference: 0x30d0910400d0021
+Active S-boxes in Round 3: [1, 2, 5, 8, 10, 11, 13, 15]
+
+Pair 10:
+P1: 0x115730424e41b185, P2: 0x1157304d4e41b18a
+
+--- Round 1 ---
+After S-box: B1 = 0x77a12d939b97e7fa, B2 = 0x77a12d909b97e7f5
+After Key XOR: B1 = 0x768268f4123c2a15, B2 = 0x768268f7123c2a1a
+After Permutation: B1 = 0x3f0d3ce51028d848, B2 = 0x370f3cf51029c84a
+Round 1 Difference: 0x802001000011002
+Active S-boxes in Round 1: [1, 4, 5, 10, 13, 15]
+
+--- Round 2 ---
+After S-box: B1 = 0x28d026ba7d3f0f9f, B2 = 0x21d8268a7d346f95
+After Key XOR: B1 = 0x28d0279938588634, B2 = 0x21d827a93853e63e
+After Permutation: B1 = 0x6d449251f4a600c4, B2 = 0x6d57da52f69600c2
+Round 2 Difference: 0x13480302300006
+Active S-boxes in Round 2: [1, 6, 7, 9, 11, 12, 13, 14]
+
+--- Round 3 ---
+After S-box: B1 = 0xc09943a7895cdd69, B2 = 0xc0a105a38c4cdd63
+After Key XOR: B1 = 0xc09943a7887f980e, B2 = 0xc0a105a38d6f9804
+After Permutation: B1 = 0x9f529c1242afe403, B2 = 0xdc309c1240ada521
+Round 3 Difference: 0x4362000002024122
+Active S-boxes in Round 3: [1, 2, 3, 4, 5, 7, 13, 14, 15, 16]
+
+=== Differential Attack Complete ===
 ```
