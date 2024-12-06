@@ -1,5 +1,7 @@
 # PUFFIN Block Cipher
 Implementation of PUFFIN block cipher
+
+## PUFFIN block diagram
 <img src="https://github.com/user-attachments/assets/8a4e30ef-d721-41dd-83d8-fd38d5dd4ce7" width="500">
 
  ## S-box Mapping (in Hexadecimal)
