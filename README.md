@@ -60,6 +60,16 @@ K
  ) from the 128-bit master key.
 Subkeys are used in sequential order for encryption and reversed for decryption.
 
+### Input:  64-bit plaintext: P, 128-bit secret key: K  
+Key Schedule:  Derive 33 subkeys: K_0, K_1, ..., K_{32}  
+Initial Key Addition:  D_0 = P64(P ⊕ K_0)  
+Round Function (for r = 1, 2, ..., 32):  
+    D_r = P64(σ_{K_r}(γ(D_{r-1})))  
+Final Ciphertext:  After 32 rounds, the ciphertext is: C = D_32  
+Where:  
+    - γ: Substitution operation (S-box).  
+    - σ_{K_r}: XOR with round key K_r.  
+    - P64: 64-bit permutation.
 
 
 
