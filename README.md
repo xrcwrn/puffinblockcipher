@@ -283,3 +283,5 @@ Active S-boxes in Round 3: [1, 9, 13]
 
 === Differential Attack Complete ===
 ```
+Application in Chat
+![image](https://github.com/user-attachments/assets/0b138b07-87cb-43c8-973e-1b47723c0e50)
