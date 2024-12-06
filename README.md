@@ -1,5 +1,68 @@
 # PUFFIN Block Cipher
-Implementation of PUFFIN block cipher
+PUFFIN is a lightweight block cipher designed for efficient encryption and decryption operations, particularly in resource-constrained environments like embedded systems, IoT devices, and smart cards. Below is a summary of its key features and properties:
+
+### Key Features
+Block Size: 64 bits
+Key Size: 128 bits
+Rounds: 32 rounds (encryption and decryption)
+Structure: Substitution-Permutation Network (SPN)
+Design Goals: Security, efficiency, and suitability for lightweight applications
+
+### Components
+Substitution Layer (
+𝛾
+γ):
+
+Uses S-boxes for non-linear substitution, ensuring confusion (breaking linear relationships).
+In decryption, the inverse S-box (
+𝛾
+−
+1
+γ 
+−1
+ ) is applied.
+Permutation Layer (
+𝑃
+64
+P 
+64
+​
+ ):
+
+Applies a fixed bit-level permutation to create diffusion, spreading input bits across rounds.
+Key Mixing (
+𝜎
+𝐾
+𝑟
+σ 
+K 
+r
+​
+ 
+​
+ ):
+
+Combines round-specific subkeys with the state using XOR to ensure dependency on the secret key.
+Key Schedule:
+
+Derives 33 subkeys (
+𝐾
+0
+K 
+0
+​
+  to 
+𝐾
+32
+K 
+32
+​
+ ) from the 128-bit master key.
+Subkeys are used in sequential order for encryption and reversed for decryption.
+
+
+
+
 
 ## PUFFIN block diagram
 <img src="https://github.com/user-attachments/assets/8a4e30ef-d721-41dd-83d8-fd38d5dd4ce7" width="500">
