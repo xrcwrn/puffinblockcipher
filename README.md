@@ -3,9 +3,13 @@ PUFFIN is a lightweight block cipher designed for efficient encryption and decry
 
 ### Key Features
 Block Size: 64 bits
+
 Key Size: 128 bits
+
 Rounds: 32 rounds (encryption and decryption)
+
 Structure: Substitution-Permutation Network (SPN)
+
 Design Goals: Security, efficiency, and suitability for lightweight applications
 
 
