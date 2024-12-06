@@ -55,7 +55,7 @@ S.linear_approximation_table()
 ```
 <img src="https://github.com/user-attachments/assets/8915a7f1-333c-4a82-bbb9-af686e6904e9" width="500">
 
-## Differential attack
+## Differential Propogation
 ```
 Plaintext: PUFFIN 1234
 Ciphertext (Hex): b86b37c46150a3cb6e5b0287023cf4aa
