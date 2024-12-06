@@ -285,10 +285,15 @@ Active S-boxes in Round 3: [1, 9, 13]
 ```
 
 ```
+gurobi_cl puffin_milp.lp
+```
+![image](https://github.com/user-attachments/assets/ed8d4658-8438-4f4b-9c43-a9d0d274f821)
+
+
+```
 gurobi_cl ResultFile=puffin_sol.sol puffin_milp.lp
 ```
-![image](https://github.com/user-attachments/assets/a3e45f5b-3b88-4e29-a22b-1a3a3cd37047)
-
+![image](https://github.com/user-attachments/assets/84363fc4-98de-4021-a222-68be4bcbf7ac)
 
 
 Application in Chat
