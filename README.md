@@ -57,243 +57,518 @@ S.linear_approximation_table()
 
 ## Differential attack
 ```
-Plaintext: PUFFIN 1234
-Ciphertext (Hex): b86b37c46150a3cb6e5b0287023cf4aa
-Decrypted Text: PUFFIN 1234
-
 === Differential Attack ===
 Master Key: 0x123456789abcdef
 Initial Difference (Delta_0): 0xf0000000f
 
 Pair 1:
-P1: 0x1d3e1a3f03fec8fa, P2: 0x1d3e1a3003fec8f5
+P1: 0x155215efaaad7358, P2: 0x155215e0aaad7357
 
 --- Round 1 ---
-After S-box: B1 = 0x702b7528d28b6f85, B2 = 0x702b752dd28b6f8a
-After Key XOR: B1 = 0xd62b4f28960b2793, B2 = 0xd62b4f2d960b279c
-After Permutation: B1 = 0xe07d0cae83a07cea, B2 = 0xea7f0cbe83a06ce8
-Round 1 Difference: 0xa02001000001002
-Active S-boxes in Round 1: [1, 4, 10, 13, 15]
+After S-box: B1 = 0x7aa37ab8555012af, B2 = 0x7aa37abd555012a1, Difference = 0x50000000e
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b1, b2, b3
+  S-box 9: Active bits = b0, b2
+After Key XOR: B1 = 0xdca340b811d05ab9, B2 = 0xdca340bd11d05ab7
+After Permutation: B1 = 0xb526dd89040079cd, B2 = 0xbf24dd99040079cf
+Round 1 Difference: 0xa02001000000002
 
 --- Round 2 ---
-After S-box: B1 = 0xbd10d65bf25d16b5, B2 = 0xb518d6ebf25dc6bf
-After Key XOR: B1 = 0x8d854257d26c3695, B2 = 0x858d42e7d26ce69f
-After Permutation: B1 = 0xaa4db0998839f455, B2 = 0xae4ff8988a3df452
-Round 2 Difference: 0x402480102040007
-Active S-boxes in Round 2: [1, 5, 7, 9, 11, 12, 13, 15]
+After S-box: B1 = 0xea3c00f4d9dd1460, B2 = 0xe8390044d9dd1468, Difference = 0x20500b000000008
+Active S-boxes in Round 2 After S-box: [1, 10, 13, 15]
+  S-box 1: Active bits = b3
+  S-box 10: Active bits = b0, b1, b3
+  S-box 13: Active bits = b0, b2
+  S-box 15: Active bits = b1
+After Key XOR: B1 = 0xdaa994f8f9ec3440, B2 = 0xd8ac9448f9ec3448
+After Permutation: B1 = 0xe4a1bd05ea68af85, B2 = 0xe0a3b500ea688f95
+Round 2 Difference: 0x402080500002010
 
 --- Round 3 ---
-After S-box: B1 = 0x5590ed44ff2489aa, B2 = 0x5b988f4ff52089a3
-After Key XOR: B1 = 0x45fe6506fa2d9bac, B2 = 0x4bf6070df0299ba5
-Round 3 Difference: 0xe08620b0a040009
-Active S-boxes in Round 3: [1, 5, 7, 9, 11, 12, 13, 15]
+After S-box: B1 = 0xb957e0dab5cf58fa, B2 = 0xbd52eaddb5cff84a, Difference = 0x4050a070000a0b0
+Active S-boxes in Round 3 After S-box: [2, 4, 9, 11, 13, 15]
+  S-box 2: Active bits = b0, b1, b3
+  S-box 4: Active bits = b1, b3
+  S-box 9: Active bits = b0, b1, b2
+  S-box 11: Active bits = b1, b3
+  S-box 13: Active bits = b0, b2
+  S-box 15: Active bits = b2
+After Key XOR: B1 = 0xa9396898b0c64afc, B2 = 0xad3c629fb0c6ea4c
+After Permutation: B1 = 0xbc36c1693612e6c4, B2 = 0xbe73c1d13217c6d4
+Round 3 Difference: 0x24500b804052010
+
+--- Round 4 ---
+After S-box: B1 = 0xe62c67c42c73bc69, B2 = 0xeb12670723716c09, Difference = 0xd3e00c30f02d060
+Active S-boxes in Round 4 After S-box: [2, 4, 5, 7, 9, 10, 13, 14, 15]
+  S-box 2: Active bits = b1, b2
+  S-box 4: Active bits = b0, b2, b3
+  S-box 5: Active bits = b1
+  S-box 7: Active bits = b0, b1, b2, b3
+  S-box 9: Active bits = b0, b1
+  S-box 10: Active bits = b2, b3
+  S-box 13: Active bits = b1, b2, b3
+  S-box 14: Active bits = b0, b1
+  S-box 15: Active bits = b0, b2, b3
+After Key XOR: B1 = 0xc42c4b767c11b5d0, B2 = 0xc9124bb5731365b0
+Round 4 Difference: 0xd3e00c30f02d060
 
 Pair 2:
-P1: 0xdc231dfdcb1be730, P2: 0xdc231df2cb1be73f
+P1: 0xd19e933ccb241d96, P2: 0xd19e9333cb241d99
 
 --- Round 1 ---
-After S-box: B1 = 0x63270806e7eb12d, B2 = 0x63270836e7eb128
-After Key XOR: B1 = 0xa0324a802afef93b, B2 = 0xa0324a832afef93e
-After Permutation: B1 = 0x957fc120752ed00b, B2 = 0x9d7fc130752fc00b
-Round 1 Difference: 0x800001000011000
-Active S-boxes in Round 1: [4, 5, 10, 15]
+After S-box: B1 = 0x74b42266e39704c, B2 = 0x74b42226e397044, Difference = 0x400000008
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b3
+  S-box 9: Active bits = b2
+After Key XOR: B1 = 0xa14b78262ab9385a, B2 = 0xa14b78222ab93852
+After Permutation: B1 = 0x938f0b627239620b, B2 = 0x918d0b627239620b
+Round 1 Difference: 0x202000000000000
 
 --- Round 2 ---
-After S-box: B1 = 0x4a18673d1a3b0dde, B2 = 0x4018672d1a386dde
-After Key XOR: B1 = 0x7a8df3313a0a2dfe, B2 = 0x708df3213a094dfe
-After Permutation: B1 = 0x38df1c5df7e06a16, B2 = 0x38ce5c5af7e06a12
-Round 2 Difference: 0x11400700000004
-Active S-boxes in Round 2: [1, 9, 12, 13, 14]
+After S-box: B1 = 0x42f8dec31324c3de, B2 = 0x47f0dec31324c3de, Difference = 0x508000000000000
+Active S-boxes in Round 2 After S-box: [13, 15]
+  S-box 13: Active bits = b3
+  S-box 15: Active bits = b0, b2
+After Key XOR: B1 = 0x726d4acf3315e3fe, B2 = 0x77654acf3315e3fe
+After Permutation: B1 = 0x2f6f663e3705ebd2, B2 = 0x2f6f66be3515ebd2
+Round 2 Difference: 0x8002100000
 
 --- Round 3 ---
-After S-box: B1 = 0x2f0876a081bdc57c, B2 = 0x2f6ba6a581bdc573
-After Key XOR: B1 = 0x3f66fee284b4d77a, B2 = 0x3f052ee784b4d775
-Round 3 Difference: 0x63d0050000000f
-Active S-boxes in Round 3: [1, 9, 12, 13, 14]
+After S-box: B1 = 0x38c8cc2b21dabe03, B2 = 0x38c8cceb2a7abe03, Difference = 0xc00ba00000
+Active S-boxes in Round 3 After S-box: [6, 7, 10]
+  S-box 6: Active bits = b1, b3
+  S-box 7: Active bits = b0, b1, b3
+  S-box 10: Active bits = b2, b3
+After Key XOR: B1 = 0x28a6446924d3ac05, B2 = 0x28a644a92f73ac05
+After Permutation: B1 = 0x5931b912b00450bc, B2 = 0x5d399812f00c51bc
+Round 3 Difference: 0x408210040080100
+
+--- Round 4 ---
+After S-box: B1 = 0xa427e473edd9ade6, B2 = 0xa0244f738dd6a7e6, Difference = 0x403ab00600f0a00
+Active S-boxes in Round 4 After S-box: [3, 5, 8, 11, 12, 13, 15]
+  S-box 3: Active bits = b1, b3
+  S-box 5: Active bits = b0, b1, b2, b3
+  S-box 8: Active bits = b1, b2
+  S-box 11: Active bits = b0, b1, b3
+  S-box 12: Active bits = b1, b3
+  S-box 13: Active bits = b0, b1
+  S-box 15: Active bits = b2
+After Key XOR: B1 = 0x8627c8c1bdbba45f, B2 = 0x822463c1ddb4ae5f
+Round 4 Difference: 0x403ab00600f0a00
 
 Pair 3:
-P1: 0x22a60b8dafd6413f, P2: 0x22a60b82afd64130
+P1: 0x73a9afb79fe3833d, P2: 0x73a9afb89fe38332
 
 --- Round 1 ---
-After S-box: B1 = 0x335cdef0580c9728, B2 = 0x335cdef3580c972d
-After Key XOR: B1 = 0x955ce4f01c8cdf3e, B2 = 0x955ce4f31c8cdf3b
-After Permutation: B1 = 0xfc066bc1c776c873, B2 = 0xf4066bd1c777d873
-Round 1 Difference: 0x800001000011000
-Active S-boxes in Round 1: [4, 5, 10, 15]
+After S-box: B1 = 0x125458e148b2f220, B2 = 0x125458ef48b2f223, Difference = 0xe00000003
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b0, b1
+  S-box 9: Active bits = b1, b2, b3
+After Key XOR: B1 = 0xb45462e10c32ba36, B2 = 0xb45462ef0c32ba35
+After Permutation: B1 = 0x9d552ad0540e4873, B2 = 0x9f552ad0540f58f1
+Round 1 Difference: 0x200000000011082
 
 --- Round 2 ---
-After S-box: B1 = 0x86dcce67611c6f12, B2 = 0x89dcce0761110f12
-After Key XOR: B1 = 0xb6495a6b412d4f32, B2 = 0xb9495a0b41202f32
-After Permutation: B1 = 0x90c46ab69f29e9c2, B2 = 0x90c502309f1969c6
-Round 2 Difference: 0x1688600308004
-Active S-boxes in Round 2: [1, 4, 6, 9, 10, 11, 12, 13]
+After S-box: B1 = 0x40aa350da9db9f12, B2 = 0x48aa350da9d8af87, Difference = 0x800000000033095
+Active S-boxes in Round 2 After S-box: [1, 2, 4, 5, 15]
+  S-box 1: Active bits = b0, b2
+  S-box 2: Active bits = b0, b3
+  S-box 4: Active bits = b0, b1
+  S-box 5: Active bits = b0, b1
+  S-box 15: Active bits = b3
+After Key XOR: B1 = 0x703fa10189eabf32, B2 = 0x783fa10189e98fa7
+After Permutation: B1 = 0x10358550d7ee2d5b, B2 = 0x1820855ad7ee3d5e
+Round 2 Difference: 0x815000a00001005
 
 --- Round 3 ---
-After S-box: B1 = 0x4d69c5ec4834b463, B2 = 0x4d6ad32d4874c46c
-After Key XOR: B1 = 0x5d074dae4d3da665, B2 = 0x5d045b6f4d7dd66a
-Round 3 Difference: 0x316c10040700f
-Active S-boxes in Round 3: [1, 4, 6, 9, 10, 11, 12, 13]
+After S-box: B1 = 0x7d2afaad01bb30ae, B2 = 0x7f3dfaa501bb20ab, Difference = 0x217000800001005
+Active S-boxes in Round 3 After S-box: [1, 4, 9, 13, 14, 15]
+  S-box 1: Active bits = b0, b2
+  S-box 4: Active bits = b0
+  S-box 9: Active bits = b3
+  S-box 13: Active bits = b0, b1, b2
+  S-box 14: Active bits = b0
+  S-box 15: Active bits = b1
+After Key XOR: B1 = 0x6d4472ef04b222a8, B2 = 0x6f5372e704b232ad
+After Permutation: B1 = 0x7d32fd8141940f4, B2 = 0xfd32fdc141b706d
+Round 3 Difference: 0x800000400023099
+
+--- Round 4 ---
+After S-box: B1 = 0xd102380f79749d89, B2 = 0xd8023806797e1dc0, Difference = 0x9000009000a8049
+Active S-boxes in Round 4 After S-box: [1, 2, 4, 5, 9, 15]
+  S-box 1: Active bits = b0, b3
+  S-box 2: Active bits = b2
+  S-box 4: Active bits = b3
+  S-box 5: Active bits = b1, b3
+  S-box 9: Active bits = b0, b3
+  S-box 15: Active bits = b0, b3
+After Key XOR: B1 = 0xf30214bd29169430, B2 = 0xfa0214b4291c1479
+Round 4 Difference: 0x9000009000a8049
 
 Pair 4:
-P1: 0xe0fd4e2fc99a61c3, P2: 0xe0fd4e20c99a61cc
+P1: 0xff51865569fcd208, P2: 0xff51865a69fcd207
 
 --- Round 1 ---
-After S-box: B1 = 0xbd809b386445c762, B2 = 0xbd809b3d6445c766
-After Key XOR: B1 = 0x1b80a13820c58f74, B2 = 0x1b80a13d20c58f70
-After Permutation: B1 = 0x18049947a5d48ac4, B2 = 0x12049957a5d48ac4
-Round 1 Difference: 0xa00001000000000
-Active S-boxes in Round 1: [10, 15]
+After S-box: B1 = 0x88a7fcaac48603df, B2 = 0x88a7fca5c48603d1, Difference = 0xf0000000e
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b1, b2, b3
+  S-box 9: Active bits = b0, b1, b2, b3
+After Key XOR: B1 = 0x2ea7c6aa80064bc9, B2 = 0x2ea7c6a580064bc7
+After Permutation: B1 = 0x5472588c1141f6dc, B2 = 0x5e70589c1140f65e
+Round 1 Difference: 0xa02001000010082
 
 --- Round 2 ---
-After S-box: B1 = 0x7fd944915a09f569, B2 = 0x73d944a15a09f569
-After Key XOR: B1 = 0x4f4cd09d7a38d549, B2 = 0x434cd0ad7a38d549
-After Permutation: B1 = 0x278a4695eb7c5295, B2 = 0x278a4e14eb7c5291
-Round 2 Difference: 0x88100000004
-Active S-boxes in Round 2: [1, 9, 10, 11]
+After S-box: B1 = 0xa913aff677978c06, B2 = 0xab1daf46779d8cab, Difference = 0x20e00b0000a00ad
+Active S-boxes in Round 2 After S-box: [1, 2, 5, 10, 13, 15]
+  S-box 1: Active bits = b0, b2, b3
+  S-box 2: Active bits = b1, b3
+  S-box 5: Active bits = b1, b3
+  S-box 10: Active bits = b0, b1, b3
+  S-box 13: Active bits = b1, b2, b3
+  S-box 15: Active bits = b1
+After Key XOR: B1 = 0x99863bfa57a6ac26, B2 = 0x9b883b4a57acac8b
+After Permutation: B1 = 0xbcd939618c9d89be, B2 = 0xb0cb316c8abd99a6
+Round 2 Difference: 0xc12080d06201018
 
 --- Round 3 ---
-After S-box: B1 = 0x31f59c4abe16a34a, B2 = 0x31f59b79be16a347
-After Key XOR: B1 = 0x219b1408bb1fb14c, B2 = 0x219b133bbb1fb141
-Round 3 Difference: 0x7330000000d
-Active S-boxes in Round 3: [1, 9, 10, 11]
+After S-box: B1 = 0xe60424c7f640f4eb, B2 = 0xed6e27c6f5e0445c, Difference = 0xb6a030103a0b0b7
+Active S-boxes in Round 3 After S-box: [1, 2, 4, 6, 7, 9, 11, 13, 14, 15]
+  S-box 1: Active bits = b0, b1, b2
+  S-box 2: Active bits = b0, b1, b3
+  S-box 4: Active bits = b0, b1, b3
+  S-box 6: Active bits = b1, b3
+  S-box 7: Active bits = b0, b1
+  S-box 9: Active bits = b0
+  S-box 11: Active bits = b0, b1
+  S-box 13: Active bits = b1, b3
+  S-box 14: Active bits = b1, b2
+  S-box 15: Active bits = b0, b1, b3
+After Key XOR: B1 = 0xf66aac85f349e6ed, B2 = 0xfd00af84f0e9565a
+After Permutation: B1 = 0xee2bc6febe641f48, B2 = 0xe646c5e2b8f80e47
+Round 3 Difference: 0x86d031c069c110f
+
+--- Round 4 ---
+After S-box: B1 = 0xbb3e6c8bebc9789f, B2 = 0xbc9c6ab3ef8fdb91, Difference = 0x7a206380446a30e
+Active S-boxes in Round 4 After S-box: [1, 3, 4, 5, 6, 7, 9, 10, 11, 13, 14, 15]
+  S-box 1: Active bits = b1, b2, b3
+  S-box 3: Active bits = b0, b1
+  S-box 4: Active bits = b1, b3
+  S-box 5: Active bits = b1, b2
+  S-box 6: Active bits = b2
+  S-box 7: Active bits = b2
+  S-box 9: Active bits = b3
+  S-box 10: Active bits = b0, b1
+  S-box 11: Active bits = b1, b2
+  S-box 13: Active bits = b1
+  S-box 14: Active bits = b1, b3
+  S-box 15: Active bits = b0, b1, b2
+After Key XOR: B1 = 0x993e4039bbab7126, B2 = 0x9e9c4601bfedd228
+Round 4 Difference: 0x7a206380446a30e
 
 Pair 5:
-P1: 0xdfd0684ddff42217, P2: 0xdfd06842dff42218
+P1: 0xd6ffe91e2253ec84, P2: 0xd6ffe9112253ec8b
 
 --- Round 1 ---
-After S-box: B1 = 0x80dcf9008893371, B2 = 0x80dcf930889337f
-After Key XOR: B1 = 0xae0df5904c097b67, B2 = 0xae0df5934c097b69
-After Permutation: B1 = 0xdc8140c75fe07277, B2 = 0xd48340d75fe17275
-Round 1 Difference: 0x802001000010002
-Active S-boxes in Round 1: [1, 5, 10, 13, 15]
+After S-box: B1 = 0xc88b47b33a2b6f9, B2 = 0xc88b47733a2b6fe, Difference = 0xc00000007
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b0, b1, b2
+  S-box 9: Active bits = b2, b3
+After Key XOR: B1 = 0xaa888e7b7722feef, B2 = 0xaa888e777722fee8
+After Permutation: B1 = 0xf85b783dbe4d13e7, B2 = 0xf25b783dbe4d0365
+Round 1 Difference: 0xa00000000001082
 
 --- Round 2 ---
-After S-box: B1 = 0x6f79d61a8bd1311, B2 = 0x9f29d01a8b7131a
-After Key XOR: B1 = 0x3662096d888c3331, B2 = 0x3967090d8886333a
-After Permutation: B1 = 0x2252bb455a09cc9, B2 = 0x23703305590acdf
-Round 2 Difference: 0x12288400303016
-Active S-boxes in Round 2: [1, 2, 4, 6, 9, 10, 11, 12, 13, 14]
+After S-box: B1 = 0x8fae1f20eb9072b1, B2 = 0x83ae1f20eb90d2ca, Difference = 0xc0000000000a07b
+Active S-boxes in Round 2 After S-box: [1, 2, 4, 15]
+  S-box 1: Active bits = b0, b1, b3
+  S-box 2: Active bits = b0, b1, b2
+  S-box 4: Active bits = b1, b3
+  S-box 15: Active bits = b2, b3
+After Key XOR: B1 = 0xbf3b8b2ccba15291, B2 = 0xb33b8b2ccba1f2ea
+After Permutation: B1 = 0x826c49ae5ada3dcd, B2 = 0x826b492e5ede2fcb
+Round 2 Difference: 0x7008004041206
 
 --- Round 3 ---
-After S-box: B1 = 0xd33a3ee9aa5d4664, B2 = 0xd321d22daa4d5608
-After Key XOR: B1 = 0xc354b6abaf545462, B2 = 0xc34f5a6faf44440e
-Round 3 Difference: 0x1becc40010106c
-Active S-boxes in Round 3: [1, 2, 4, 6, 9, 10, 11, 12, 13, 14]
+After S-box: B1 = 0xf3c6945ba5052060, B2 = 0xf3ce943bab0b386e, Difference = 0x800600e0e180e
+Active S-boxes in Round 3 After S-box: [1, 3, 4, 5, 7, 10, 13]
+  S-box 1: Active bits = b1, b2, b3
+  S-box 3: Active bits = b3
+  S-box 4: Active bits = b0
+  S-box 5: Active bits = b1, b2, b3
+  S-box 7: Active bits = b1, b2, b3
+  S-box 10: Active bits = b1, b2
+  S-box 13: Active bits = b3
+After Key XOR: B1 = 0xe3a81c19a00c3266, B2 = 0xe3a01c79ae022a68
+After Permutation: B1 = 0xc8a11435363086c3, B2 = 0xd0bb3c35741006e0
+Round 3 Difference: 0x181a280042208023
+
+--- Round 4 ---
+After S-box: B1 = 0x6f57792a2c2dfc62, B2 = 0xdee262a197ddcbd, Difference = 0x62b95f00355020df
+Active S-boxes in Round 4 After S-box: [1, 2, 4, 6, 7, 8, 11, 12, 13, 14, 15, 16]
+  S-box 1: Active bits = b0, b1, b2, b3
+  S-box 2: Active bits = b0, b2, b3
+  S-box 4: Active bits = b1
+  S-box 6: Active bits = b0, b2
+  S-box 7: Active bits = b0, b2
+  S-box 8: Active bits = b0, b1
+  S-box 11: Active bits = b0, b1, b2, b3
+  S-box 12: Active bits = b0, b2
+  S-box 13: Active bits = b0, b3
+  S-box 14: Active bits = b0, b1, b3
+  S-box 15: Active bits = b1
+  S-box 16: Active bits = b1, b2
+After Key XOR: B1 = 0x4d5755987c4ff5db, B2 = 0x2fee0a98491fd504
+Round 4 Difference: 0x62b95f00355020df
 
 Pair 6:
-P1: 0x3321bce030ffce56, P2: 0x3321bcef30ffce59
+P1: 0x6c9fdc8cd5a4e8f6, P2: 0x6c9fdc83d5a4e8f9
 
 --- Round 1 ---
-After S-box: B1 = 0x2237e6bd2d886bac, B2 = 0x2237e6b82d886ba4
-After Key XOR: B1 = 0x8437dcbd690823ba, B2 = 0x8437dcb8690823b2
-After Permutation: B1 = 0xc6a708b96d6261da, B2 = 0xc4a508a96d6261da
-Round 1 Difference: 0x202001000000000
-Active S-boxes in Round 1: [10, 13, 15]
+After S-box: B1 = 0xc64806f60a59bf8c, B2 = 0xc64806f20a59bf84, Difference = 0x400000008
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b3
+  S-box 9: Active bits = b2
+After Key XOR: B1 = 0x60483cf64ed9f79a, B2 = 0x60483cf24ed9f792
+After Permutation: B1 = 0x478fef6bdb250063, B2 = 0x458def6bdb250063
+Round 1 Difference: 0x202000000000000
 
 --- Round 2 ---
-After S-box: B1 = 0x6c51dfe4c0c3c705, B2 = 0x695adf54c0c3c705
-After Key XOR: B1 = 0x5cc44be8e0f2e725, B2 = 0x59cf4b58e0f2e725
-After Permutation: B1 = 0xd51ffa0ad8c5cd4, B2 = 0x951f721af9c7cdc
-Round 2 Difference: 0x400088102102008
-Active S-boxes in Round 2: [1, 4, 6, 7, 9, 10, 11, 15]
+After S-box: B1 = 0x91f8b8ce0e3addc2, B2 = 0x9af0b8ce0e3addc2, Difference = 0xb08000000000000
+Active S-boxes in Round 2 After S-box: [13, 15]
+  S-box 13: Active bits = b3
+  S-box 15: Active bits = b0, b1, b3
+After Key XOR: B1 = 0xa16d2cc22e0bfde2, B2 = 0xaa652cc22e0bfde2
+After Permutation: B1 = 0xd439626af7352233, B2 = 0xd439626ef5252237
+Round 2 Difference: 0x402100004
 
 --- Round 3 ---
-After S-box: B1 = 0xd0a7885d50f6a609, B2 = 0xd4a7813758461606
-After Key XOR: B1 = 0xc0c9001f55ffb40f, B2 = 0xc4c909755d4f0400
-Round 3 Difference: 0x400096a08b0b00f
-Active S-boxes in Round 3: [1, 4, 6, 7, 9, 10, 11, 15]
+After S-box: B1 = 0x924c3c5812a3322, B2 = 0x924c3cb8a3a3321, Difference = 0xe0b100003
+Active S-boxes in Round 3 After S-box: [1, 6, 7, 9]
+  S-box 1: Active bits = b0, b1
+  S-box 6: Active bits = b0
+  S-box 7: Active bits = b0, b1, b3
+  S-box 9: Active bits = b1, b2, b3
+After Key XOR: B1 = 0x194a4b8784232124, B2 = 0x194a4b898f332127
+After Permutation: B1 = 0xe51023207994c2c, B2 = 0xd59023247985dae
+Round 3 Difference: 0x308000040011182
+
+--- Round 4 ---
+After S-box: B1 = 0xdba7d323d1449636, B2 = 0xd0a4d323914fa05b, Difference = 0xb030000400b366d
+Active S-boxes in Round 4 After S-box: [1, 2, 3, 4, 5, 8, 13, 15]
+  S-box 1: Active bits = b0, b2, b3
+  S-box 2: Active bits = b1, b2
+  S-box 3: Active bits = b1, b2
+  S-box 4: Active bits = b0, b1
+  S-box 5: Active bits = b0, b1, b3
+  S-box 8: Active bits = b2
+  S-box 13: Active bits = b0, b1
+  S-box 15: Active bits = b0, b1, b3
+After Key XOR: B1 = 0xf9a7ff9181269f8f, B2 = 0xf2a4ff91c12da9e2
+Round 4 Difference: 0xb030000400b366d
 
 Pair 7:
-P1: 0x568208da5122d0bd, P2: 0x568208d55122d0b2
+P1: 0x11d868f29181b14d, P2: 0x11d868fd9181b142
 
 --- Round 1 ---
-After S-box: B1 = 0xacf3df05a7330de0, B2 = 0xacf3df0aa7330de3
-After Key XOR: B1 = 0xaf3e505e3b345f6, B2 = 0xaf3e50ae3b345f5
-After Permutation: B1 = 0x4b3c535eadca670e, B2 = 0x493c534eadcb778c
-Round 1 Difference: 0x200001000011082
-Active S-boxes in Round 1: [1, 2, 4, 5, 10, 15]
+After S-box: B1 = 0x770fcf8347f7e790, B2 = 0x770fcf8047f7e793, Difference = 0x300000003
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b0, b1
+  S-box 9: Active bits = b0, b1
+After Key XOR: B1 = 0xd10ff5830377af86, B2 = 0xd10ff5800377af85
+After Permutation: B1 = 0xdd99845a83dde95a, B2 = 0xdd99844a83dcf958
+Round 1 Difference: 0x1000011002
 
 --- Round 2 ---
-After S-box: B1 = 0x9e26a2ab5065c1db, B2 = 0x9426a29b506e11f6
-After Key XOR: B1 = 0xaeb336a77054e1fb, B2 = 0xa4b33697705f31d6
-After Permutation: B1 = 0xe7e7d8dc3d07b20e, B2 = 0xeff590db3923a20b
-Round 2 Difference: 0x812480704241005
-Active S-boxes in Round 2: [1, 4, 5, 6, 7, 9, 11, 12, 13, 14, 15]
+After S-box: B1 = 0x44f9a5f200b4a5, B2 = 0x44f995f20684af, Difference = 0x300006300a
+Active S-boxes in Round 2 After S-box: [1, 4, 5, 10]
+  S-box 1: Active bits = b1, b3
+  S-box 4: Active bits = b0, b1
+  S-box 5: Active bits = b1, b2
+  S-box 10: Active bits = b0, b1
+After Key XOR: B1 = 0x30d16da9d2319485, B2 = 0x30d16d99d237a48f
+After Permutation: B1 = 0x6d081a7a988e7c81, B2 = 0x6d1b127b988efc82
+Round 2 Difference: 0x13080100008003
 
 --- Round 3 ---
-After S-box: B1 = 0xb1b10f0620d1e3db, B2 = 0xb88a4d0e243253de
-After Key XOR: B1 = 0xa1df874425d8f1dd, B2 = 0xa8e4c54c213b41d8
-Round 3 Difference: 0x93b420804e3b005
-Active S-boxes in Round 3: [1, 4, 5, 6, 7, 9, 11, 12, 13, 14, 15]
+After S-box: B1 = 0xc0df75154ffb16f7, B2 = 0xc07e731e4ffb86f3, Difference = 0xa1060b00009004
+Active S-boxes in Round 3 After S-box: [1, 4, 9, 11, 13, 14]
+  S-box 1: Active bits = b2
+  S-box 4: Active bits = b0, b3
+  S-box 9: Active bits = b0, b1, b3
+  S-box 11: Active bits = b1, b2
+  S-box 13: Active bits = b0
+  S-box 14: Active bits = b1, b3
+After Key XOR: B1 = 0xd0b1fd574af204f1, B2 = 0xd010fb5c4af294f5
+After Permutation: B1 = 0xc3bcb579cccb7a00, B2 = 0x8bdca569ccce5a81
+Round 3 Difference: 0x4860101000052081
+
+--- Round 4 ---
+After S-box: B1 = 0x62e6ea14666e15dd, B2 = 0xfe065ac4666ba5f7, Difference = 0x9ce0b0d00005b02a
+Active S-boxes in Round 4 After S-box: [1, 2, 4, 5, 10, 12, 14, 15, 16]
+  S-box 1: Active bits = b1, b3
+  S-box 2: Active bits = b1
+  S-box 4: Active bits = b0, b1, b3
+  S-box 5: Active bits = b0, b2
+  S-box 10: Active bits = b0, b2, b3
+  S-box 12: Active bits = b0, b1, b3
+  S-box 14: Active bits = b1, b2, b3
+  S-box 15: Active bits = b2, b3
+  S-box 16: Active bits = b0, b3
+After Key XOR: B1 = 0x40e6c6a6360c1c64, B2 = 0xdc0676763609ac4e
+Round 4 Difference: 0x9ce0b0d00005b02a
 
 Pair 8:
-P1: 0x56efc92f7236504e, P2: 0x56efc92072365041
+P1: 0xf39c43c0b89b6aef, P2: 0xf39c43cfb89b6ae0
 
 --- Round 1 ---
-After S-box: B1 = 0xacb86438132cad9b, B2 = 0xacb8643d132cad97
-After Key XOR: B1 = 0xab85e3857ace58d, B2 = 0xab85e3d57ace581
-After Permutation: B1 = 0x68eb592d8b2ed1a4, B2 = 0x62e9593d8b2ed1a4
-Round 1 Difference: 0xa02001000000000
-Active S-boxes in Round 1: [10, 13, 15]
+After S-box: B1 = 0x8246926def4ec5b8, B2 = 0x82469268ef4ec5bd, Difference = 0x500000005
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b0, b2
+  S-box 9: Active bits = b0, b2
+After Key XOR: B1 = 0x2446a86dabce8dae, B2 = 0x2446a868abce8dab
+After Permutation: B1 = 0x1a1aabf8f564859a, B2 = 0x101aabe8f564959a
+Round 1 Difference: 0xa00001000001000
 
 --- Round 2 ---
-After S-box: B1 = 0xcfbea430fe3b0759, B2 = 0xc3b4a420fe3b0759
-After Key XOR: B1 = 0xff2b303cde0a2779, B2 = 0xf321302cde0a2779
-After Permutation: B1 = 0xa2bf0cc5df303eec, B2 = 0xa2bf0c44dd303ee0
-Round 2 Difference: 0x810200000c
-Active S-boxes in Round 2: [1, 7, 9, 10]
+After S-box: B1 = 0x75755e8f8ac9fa45, B2 = 0x7d755ebf8ac94a45, Difference = 0x80000300000b000
+Active S-boxes in Round 2 After S-box: [4, 10, 15]
+  S-box 4: Active bits = b0, b1, b3
+  S-box 10: Active bits = b0, b1
+  S-box 15: Active bits = b3
+After Key XOR: B1 = 0x45e0ca83aaf8da65, B2 = 0x4de0cab3aaf86a65
+After Permutation: B1 = 0x1d68d7b0647d5641, B2 = 0x1d69dfb164795644
+Round 2 Difference: 0x1080100040005
 
 --- Round 3 ---
-After S-box: B1 = 0x53e8d66a082d2bb6, B2 = 0x53e8d699002d2bbd
-After Key XOR: B1 = 0x43865e280d2439b0, B2 = 0x43865edb052439bb
-Round 3 Difference: 0xf30800000b
-Active S-boxes in Round 3: [1, 7, 9, 10]
+After S-box: B1 = 0x70cf01edc910ac97, B2 = 0x70c408e7c914ac99, Difference = 0xb090a0004000e
+Active S-boxes in Round 3 After S-box: [1, 5, 9, 11, 13]
+  S-box 1: Active bits = b1, b2, b3
+  S-box 5: Active bits = b2
+  S-box 9: Active bits = b1, b3
+  S-box 11: Active bits = b0, b3
+  S-box 13: Active bits = b0, b1, b3
+After Key XOR: B1 = 0x60a189afcc19be91, B2 = 0x60aa80a5cc1dbe9f
+After Permutation: B1 = 0x17251c3ad8e534e1, B2 = 0x1f271c1ada64946b
+Round 3 Difference: 0x80200200281a08a
+
+--- Round 4 ---
+After S-box: B1 = 0x713a76250fba29b7, B2 = 0x7831767505c949ce, Difference = 0x90b00500a736079
+Active S-boxes in Round 4 After S-box: [1, 2, 4, 5, 6, 7, 10, 13, 15]
+  S-box 1: Active bits = b0, b3
+  S-box 2: Active bits = b0, b1, b2
+  S-box 4: Active bits = b1, b2
+  S-box 5: Active bits = b0, b1
+  S-box 6: Active bits = b0, b1, b2
+  S-box 7: Active bits = b1, b3
+  S-box 10: Active bits = b0, b2
+  S-box 13: Active bits = b0, b1, b3
+  S-box 15: Active bits = b0, b3
+After Key XOR: B1 = 0x533a5a975fd8200e, B2 = 0x5a315ac755ab4077
+Round 4 Difference: 0x90b00500a736079
 
 Pair 9:
-P1: 0x7f9b10429341f792, P2: 0x7f9b104d9341f79d
+P1: 0x135c19b2a8a35640, P2: 0x135c19bda8a3564f
 
 --- Round 1 ---
-After S-box: B1 = 0x184e7d9342978143, B2 = 0x184e7d9042978140
-After Key XOR: B1 = 0xbe4e47930617c955, B2 = 0xbe4e47900617c956
-After Permutation: B1 = 0xdd5c42971385da3c, B2 = 0xdd5c42871384ca3e
-Round 1 Difference: 0x1000011002
-Active S-boxes in Round 1: [1, 4, 5, 10]
+After S-box: B1 = 0x72a674e35f52ac9d, B2 = 0x72a674e05f52ac98, Difference = 0x300000005
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b0, b2
+  S-box 9: Active bits = b0, b1
+After Key XOR: B1 = 0xd4a64ee31bd2e48b, B2 = 0xd4a64ee01bd2e48e
+After Permutation: B1 = 0xe57bfdb8c005591a, B2 = 0xed7bfda8c004491a
+Round 1 Difference: 0x800001000011000
 
 --- Round 2 ---
-After S-box: B1 = 0xa6934172fa0526, B2 = 0xa693f172f9652b
-After Key XOR: B1 = 0x3033074d52cb2506, B2 = 0x303307fd52c8450b
-After Permutation: B1 = 0x6a79a11299a2288a, B2 = 0x666ae91199a2388a
-Round 2 Difference: 0xc13480300001000
-Active S-boxes in Round 2: [4, 9, 11, 12, 13, 14, 15]
+After S-box: B1 = 0xba1e80ef6ddaa475, B2 = 0xb01e805f6dd99475, Difference = 0xa0000b000033000
+Active S-boxes in Round 2 After S-box: [4, 5, 10, 15]
+  S-box 4: Active bits = b0, b1
+  S-box 5: Active bits = b0, b1
+  S-box 10: Active bits = b0, b1, b3
+  S-box 15: Active bits = b1, b3
+After Key XOR: B1 = 0x8a8b14e34deb8455, B2 = 0x808b14534de8b455
+After Permutation: B1 = 0xcc94b916ca2d332c, B2 = 0xc885b111ca2d3329
+Round 2 Difference: 0x411080700000005
 
 --- Round 3 ---
-After S-box: B1 = 0xc514577344533ff5, B2 = 0xccc5b47744532ff5
-After Key XOR: B1 = 0xd57adf31415a2df3, B2 = 0xdcab3c35415a3df3
-Round 3 Difference: 0x9d1e30400001000
-Active S-boxes in Round 3: [4, 9, 11, 12, 13, 14, 15]
+After S-box: B1 = 0x6649e47c65302236, B2 = 0x6ffae77765302234, Difference = 0x9b3030b00000002
+Active S-boxes in Round 3 After S-box: [1, 9, 11, 13, 14, 15]
+  S-box 1: Active bits = b1
+  S-box 9: Active bits = b0, b1, b3
+  S-box 11: Active bits = b0, b1
+  S-box 13: Active bits = b0, b1
+  S-box 14: Active bits = b0, b1, b3
+  S-box 15: Active bits = b0, b3
+After Key XOR: B1 = 0x76276c3e60393030, B2 = 0x7f946f3560393032
+After Permutation: B1 = 0x43250ce73c296899, B2 = 0x43451cf73cba4817
+Round 3 Difference: 0x6010100093208e
+
+--- Round 4 ---
+After S-box: B1 = 0x923ad6b12634cf44, B2 = 0x929a768126e59f71, Difference = 0xa0a03000d15035
+Active S-boxes in Round 4 After S-box: [1, 2, 4, 5, 6, 10, 12, 14]
+  S-box 1: Active bits = b0, b2
+  S-box 2: Active bits = b0, b1
+  S-box 4: Active bits = b0, b2
+  S-box 5: Active bits = b0
+  S-box 6: Active bits = b0, b2, b3
+  S-box 10: Active bits = b0, b1
+  S-box 12: Active bits = b1, b3
+  S-box 14: Active bits = b1, b3
+After Key XOR: B1 = 0xb03afa037656c6fd, B2 = 0xb09a5a33768796c8
+Round 4 Difference: 0xa0a03000d15035
 
 Pair 10:
-P1: 0x66ee138da9099740, P2: 0x66ee1382a909974f
+P1: 0x6513ccd48b2a82a, P2: 0x6513cc248b2a825
 
 --- Round 1 ---
-After S-box: B1 = 0xccbb72f054d4419d, B2 = 0xccbb72f354d44198
-After Key XOR: B1 = 0x6abb48f01054098b, B2 = 0x6abb48f31054098e
-After Permutation: B1 = 0x3522bc2d1302f00e, B2 = 0x3d22bc3d1303e00e
-Round 1 Difference: 0x800001000011000
-Active S-boxes in Round 1: [4, 5, 10, 15]
+After S-box: B1 = 0xdca726609fe35f35, B2 = 0xdca726639fe35f3a, Difference = 0x30000000f
+Active S-boxes in Round 1 After S-box: [1, 9]
+  S-box 1: Active bits = b0, b1, b2, b3
+  S-box 9: Active bits = b0, b1
+After Key XOR: B1 = 0x7aa71c60db631723, B2 = 0x7aa71c63db63172c
+After Permutation: B1 = 0x60b8bc26dd083d5f, B2 = 0x68babc36dd092d5d
+Round 1 Difference: 0x802001000011002
 
 --- Round 2 ---
-After S-box: B1 = 0x2a33e63072d38ddb, B2 = 0x2033e62072d2bddb
-After Key XOR: B1 = 0x1aa6723c52e2adfb, B2 = 0x10a6722c52e39dfb
-After Permutation: B1 = 0x32ff994d8d0c5a9e, B2 = 0x32fe994a8d0c5a9b
-Round 2 Difference: 0x1000700000005
-Active S-boxes in Round 2: [1, 9, 13]
+After S-box: B1 = 0xcdefe63c00df20a8, B2 = 0xcfe5e62c00d430a0, Difference = 0x20a0010000b1008
+Active S-boxes in Round 2 After S-box: [1, 4, 5, 10, 13, 15]
+  S-box 1: Active bits = b3
+  S-box 4: Active bits = b0
+  S-box 5: Active bits = b0, b1, b3
+  S-box 10: Active bits = b0
+  S-box 13: Active bits = b1, b3
+  S-box 15: Active bits = b1
+After Key XOR: B1 = 0xfd7a723020ee0088, B2 = 0xff70722020e51080
+After Permutation: B1 = 0x80f28fc9323ac80c, B2 = 0x80e08fce301ac805
+Round 2 Difference: 0x12000702200009
 
 --- Round 3 ---
-After S-box: B1 = 0x23884490f0d6a54b, B2 = 0x238b4495f0d6a54e
-After Key XOR: B1 = 0x33e6ccd2f5dfb74d, B2 = 0x33e5ccd7f5dfb748
-Round 3 Difference: 0x3000500000005
-Active S-boxes in Round 3: [1, 9, 13]
+After S-box: B1 = 0xfd83f86423256fd6, B2 = 0xfdbdf86b2d756fda, Difference = 0x3e000f0e50000c
+Active S-boxes in Round 3 After S-box: [1, 6, 7, 9, 13, 14]
+  S-box 1: Active bits = b2, b3
+  S-box 6: Active bits = b0, b2
+  S-box 7: Active bits = b1, b2, b3
+  S-box 9: Active bits = b0, b1, b2, b3
+  S-box 13: Active bits = b1, b2, b3
+  S-box 14: Active bits = b0, b1
+After Key XOR: B1 = 0xeded7026262c7dd0, B2 = 0xedd37029287c7ddc
+After Permutation: B1 = 0x92ad5ec8b339e235, B2 = 0x9987ded8f13ae28d
+Round 3 Difference: 0xb2a8010420300b8
+
+--- Round 4 ---
+After S-box: B1 = 0x4350ab6fe224b32a, B2 = 0x44f10b0f8725b3f0, Difference = 0x7a1a060650100da
+Active S-boxes in Round 4 After S-box: [1, 2, 5, 7, 8, 10, 12, 13, 14, 15]
+  S-box 1: Active bits = b1, b3
+  S-box 2: Active bits = b0, b2, b3
+  S-box 5: Active bits = b0
+  S-box 7: Active bits = b0, b2
+  S-box 8: Active bits = b1, b2
+  S-box 10: Active bits = b1, b2
+  S-box 12: Active bits = b1, b3
+  S-box 13: Active bits = b0
+  S-box 14: Active bits = b1, b3
+  S-box 15: Active bits = b0, b1, b2
+After Key XOR: B1 = 0x615087ddb246ba93, B2 = 0x66f127bdd747ba49
+Round 4 Difference: 0x7a1a060650100da
 
 === Differential Attack Complete ===
 ```
