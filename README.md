@@ -177,4 +177,8 @@ gurobi_cl ResultFile=puffin_sol.sol puffin_milp.lp
 
 
 ## Software Application
+Designed for resource-constrained environments such as IoT, RFID, and embedded systems.
+Provides confidentiality and integrity for real-time message exchanges.
+Easily implemented on resource-limited platforms like smart cards and wearables.
+We developed a secure chat application using PUFFIN.
 ![image](https://github.com/user-attachments/assets/0b138b07-87cb-43c8-973e-1b47723c0e50)
