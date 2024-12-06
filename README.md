@@ -283,7 +283,7 @@ Active S-boxes in Round 3: [1, 9, 13]
 
 === Differential Attack Complete ===
 ```
-
+## Mixed-Integer Linear Programming (MILP)
 ```
 gurobi_cl puffin_milp.lp
 ```
