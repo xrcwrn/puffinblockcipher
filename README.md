@@ -283,7 +283,7 @@ Active S-boxes in Round 3: [1, 9, 13]
 
 === Differential Attack Complete ===
 ```
-## Mixed-Integer Linear Programming (MILP)
+## Automated Cryptanalysis  Mixed-Integer Linear Programming (MILP)
 ```
 gurobi_cl puffin_milp.lp
 ```
@@ -296,5 +296,5 @@ gurobi_cl ResultFile=puffin_sol.sol puffin_milp.lp
 ![image](https://github.com/user-attachments/assets/84363fc4-98de-4021-a222-68be4bcbf7ac)
 
 
-Application in Chat
+## Software Application
 ![image](https://github.com/user-attachments/assets/0b138b07-87cb-43c8-973e-1b47723c0e50)
