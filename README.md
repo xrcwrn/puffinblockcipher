@@ -8,68 +8,6 @@ Rounds: 32 rounds (encryption and decryption)
 Structure: Substitution-Permutation Network (SPN)
 Design Goals: Security, efficiency, and suitability for lightweight applications
 
-### Components
-Substitution Layer (
-𝛾
-γ):
-
-Uses S-boxes for non-linear substitution, ensuring confusion (breaking linear relationships).
-In decryption, the inverse S-box (
-𝛾
-−
-1
-γ 
-−1
- ) is applied.
-Permutation Layer (
-𝑃
-64
-P 
-64
-​
- ):
-
-Applies a fixed bit-level permutation to create diffusion, spreading input bits across rounds.
-Key Mixing (
-𝜎
-𝐾
-𝑟
-σ 
-K 
-r
-​
- 
-​
- ):
-
-Combines round-specific subkeys with the state using XOR to ensure dependency on the secret key.
-Key Schedule:
-
-Derives 33 subkeys (
-𝐾
-0
-K 
-0
-​
-  to 
-𝐾
-32
-K 
-32
-​
- ) from the 128-bit master key.
-Subkeys are used in sequential order for encryption and reversed for decryption.
-
-### Input:  64-bit plaintext: P, 128-bit secret key: K  
-Key Schedule:  Derive 33 subkeys: K_0, K_1, ..., K_{32}  
-Initial Key Addition:  D_0 = P64(P ⊕ K_0)  
-Round Function (for r = 1, 2, ..., 32):  
-    D_r = P64(σ_{K_r}(γ(D_{r-1})))  
-Final Ciphertext:  After 32 rounds, the ciphertext is: C = D_32  
-Where:  
-    - γ: Substitution operation (S-box).  
-    - σ_{K_r}: XOR with round key K_r.  
-    - P64: 64-bit permutation.
 
 
 
