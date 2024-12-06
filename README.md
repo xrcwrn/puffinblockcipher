@@ -283,5 +283,13 @@ Active S-boxes in Round 3: [1, 9, 13]
 
 === Differential Attack Complete ===
 ```
+
+```
+gurobi_cl ResultFile=puffin_sol.sol puffin_milp.lp
+```
+![image](https://github.com/user-attachments/assets/a3e45f5b-3b88-4e29-a22b-1a3a3cd37047)
+
+
+
 Application in Chat
 ![image](https://github.com/user-attachments/assets/0b138b07-87cb-43c8-973e-1b47723c0e50)
