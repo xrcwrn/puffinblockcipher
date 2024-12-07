@@ -180,6 +180,8 @@ gurobi_cl ResultFile=puffin_sol.sol puffin_milp.lp
 ```
 ![image](https://github.com/user-attachments/assets/16e86cc2-fc4c-473e-9939-9700805571f9)
 
+## Quantum implementation 
+sbox.py, P64.py and keySchedular.py is a Quiskit python file to generate quantum circute
 
 
 ## Software Application
