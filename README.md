@@ -156,6 +156,13 @@ Matched Key: 0b1101
 
 === Found Key: 0b1101 ===
 
+## Integral Attack
+4 Rounds of PUFFIN
+<img src="https://github.com/user-attachments/assets/273c2d34-3ada-4b7b-8667-c05b7c5680a0" width="500">
+
+Integral attack on 4th round
+<img src="https://github.com/user-attachments/assets/76c93ad3-ff8a-4b5f-80df-20b2b251b1c0" width="500">
+
 
 ## Automated Cryptanalysis  Mixed-Integer Linear Programming (MILP)
 ```
