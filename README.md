@@ -183,6 +183,7 @@ gurobi_cl ResultFile=puffin_sol.sol puffin_milp.lp
 ## Quantum implementation 
 sbox.py, P64.py and keySchedular.py is a Quiskit python file to generate quantum circute
 
+![quantum-sbox](https://github.com/user-attachments/assets/01117c55-7432-4705-9709-45e36aef9f21)
 
 ## Software Application
 Designed for resource-constrained environments such as IoT, RFID, and embedded systems.
