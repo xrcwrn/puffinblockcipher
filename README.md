@@ -132,6 +132,31 @@ After Key XOR: Difference = 0xb00f00003a003d8d
 === Differential Attack Complete ===
 Total Probability of 4 Rounds: 0.000000003725
 ```
+## Differential Attack 4 Round
+Testing Key Guess: 0b100
+
+Testing Key Guess: 0b101
+
+Testing Key Guess: 0b110
+
+Testing Key Guess: 0b111
+
+Testing Key Guess: 0b1000
+
+Testing Key Guess: 0b1001
+
+Testing Key Guess: 0b1010
+
+Testing Key Guess: 0b1011
+
+Testing Key Guess: 0b1100
+
+Testing Key Guess: 0b1101
+Matched Key: 0b1101
+
+=== Found Key: 0b1101 ===
+
+
 ## Automated Cryptanalysis  Mixed-Integer Linear Programming (MILP)
 ```
 gurobi_cl puffin_milp.lp
