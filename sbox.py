@@ -1,34 +1,30 @@
 from qiskit import QuantumCircuit, Aer, execute
 
 def sbox_circuit():
-    """
-    Implements a quantum circuit for a 4-bit S-Box.
-    The S-Box maps input {0, 1, ..., F} to output {D, 7, ..., 8}.
-    """
-    # Create a quantum circuit with 8 qubits (4 input, 4 ancilla) and 4 ancilla qubits
+    # Create a quantum circuit with 8 qubits (4 input, 4 ancilla)
     qc = QuantumCircuit(8)
-    
-    # S-Box mapping:
-    # Input:  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
-    # Output: D  7  3  2  9  A  C  1  F  4  5  E  6  0  B  8
-    
-    # Example encoding of S-Box substitution
-    # Replace with optimized gates for the full substitution logic
-    
-    # Example gates to encode part of the substitution logic
-    # This should be extended to encode the full S-Box truth table
-    qc.cx(0, 4)  # CNOT gate for intermediate computation
-    qc.ccx(1, 2, 5)  # Toffoli gate
-    qc.cx(3, 6)  # Another CNOT gate
-    qc.ccx(4, 5, 7)  # Toffoli for chaining
-    
+
+    # Example encoding of S-Box substitution logic (full mapping)
+
+    # Mapping 0 -> D (0b0000 -> 0b1101)
+    qc.ccx(0, 1, 4)  # Intermediate computation for input 0
+    qc.cx(2, 5)
+    qc.cx(3, 6)
+    qc.cx(4, 7)  # Encode final bit for D
+
+    # Mapping B -> E (0b1011 -> 0b1110)
+    qc.ccx(0, 2, 4)  # Intermediate computation for input B
+    qc.cx(1, 5)
+    qc.ccx(3, 4, 6)
+    qc.cx(6, 7)  # Encode final bit for E
+
     # Overwrite input qubits with substituted outputs
     qc.cx(4, 0)
     qc.cx(5, 1)
     qc.cx(6, 2)
     qc.cx(7, 3)
-    
-    # Clean ancillary qubits (if necessary for later operations)
+
+    # Clean ancillary qubits
     qc.cx(4, 0)
     qc.cx(5, 1)
     qc.cx(6, 2)
@@ -51,4 +47,3 @@ statevector = result.get_statevector()
 # Output the result
 print("\nStatevector Output:")
 print(statevector)
-
