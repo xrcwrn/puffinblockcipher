@@ -61,7 +61,7 @@ S.linear_approximation_table()
 
 
 ## Sbox Probablity for 4 rounds
-<img src="https://github.com/user-attachments/assets/7d7f36f3-f18e-41f4-88db-262112851ba4" width="500">
+<img src="https://github.com/user-attachments/assets/7d7f36f3-f18e-41f4-88db-262112851ba4" width="700">
 
 ## Differential Propogation
 ```
